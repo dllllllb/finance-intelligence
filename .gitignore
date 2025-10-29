@@ -41,3 +41,7 @@ test_*.py
 
 # Archive files
 *.zip
+
+# Large training data files (not needed for app runtime)
+ref/lease.xlsx
+ref/rent.xlsx
