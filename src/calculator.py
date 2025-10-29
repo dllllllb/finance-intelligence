@@ -125,37 +125,74 @@ class ModelBasedCalculator:
         option_coeff = params['option_coefficient']
         residual_rate = params['residual_rate']
 
+        # 잔가 계산
+        residual_value = car_price * residual_rate
+        depreciation = car_price - residual_value
+        monthly_depreciation = depreciation / period
+
+        debug['steps'].append(f"=== 잔가 정보 ===")
+        debug['steps'].append(f"계약종료시 잔가율: {residual_rate*100:.2f}%")
+        debug['steps'].append(f"잔가금액: {car_price:,.0f} × {residual_rate:.4f} = {residual_value:,.0f}원")
+        debug['steps'].append(f"감가상각분: {car_price:,.0f} - {residual_value:,.0f} = {depreciation:,.0f}원")
+        debug['steps'].append(f"월 감가분: {depreciation:,.0f} ÷ {period}개월 = {monthly_depreciation:,.0f}원")
+        debug['steps'].append(f"")
+
         # 1. 기본 월대여료 (차량가 × 기본요율)
-        base_monthly = car_price * base_rate / 100
-        debug['steps'].append(f"기본 월대여료: {car_price:,.0f} × {base_rate:.4f}% = {base_monthly:,.0f}원")
+        # base_rate에 이미 잔가율이 반영되어 있으므로, 추가 조정 적용
+        base_monthly_raw = car_price * base_rate / 100
+
+        # 잔가율 조정: 잔가율이 높을수록 월납입금이 낮아야 함
+        # 평균 잔가율 대비 조정 (평균 약 50%)
+        average_residual = 0.50
+        residual_adjustment = 1 - (residual_rate - average_residual) * 0.3
+        base_monthly = base_monthly_raw * residual_adjustment
+
+        debug['steps'].append(f"=== 월대여료 계산 ===")
+        debug['steps'].append(f"기본 월대여료(Raw): {car_price:,.0f} × {base_rate:.4f}% = {base_monthly_raw:,.0f}원")
+        debug['steps'].append(f"잔가율 조정: {base_monthly_raw:,.0f} × {residual_adjustment:.4f} = {base_monthly:,.0f}원")
+        debug['steps'].append(f"  (잔가율 {residual_rate*100:.1f}% vs 평균 {average_residual*100:.0f}%)")
 
         # 2. 옵션 추가
         option_addition = option_coeff * (option_price - dealer_discount)
+        debug['steps'].append(f"")
+        debug['steps'].append(f"=== 옵션 ===")
         debug['steps'].append(f"옵션 추가: {option_coeff:.6f} × ({option_price:,.0f} - {dealer_discount:,.0f}) = {option_addition:,.2f}원")
 
         # 3. 보증금/선납금 할인
+        debug['steps'].append(f"")
+        debug['steps'].append(f"=== 보증금/선납금 ===")
         deposit_discount = 0
         if payment_type == '보증금' and deposit_rate > 0:
             # 보증금: 월대여료 할인
             # 보증금 30% 기준 6~8% 할인 추정
             discount_rate = deposit_rate / 30 * 0.07  # 30% 기준 7% 할인
             deposit_discount = base_monthly * discount_rate
-            debug['steps'].append(f"보증금 할인 ({deposit_rate}%): {base_monthly:,.0f} × {discount_rate:.4f} = -{deposit_discount:,.2f}원")
+            deposit_amount = car_price * deposit_rate / 100
+            debug['steps'].append(f"보증금 {deposit_rate}%: {deposit_amount:,.0f}원")
+            debug['steps'].append(f"보증금 할인: {base_monthly:,.0f} × {discount_rate:.4f} = -{deposit_discount:,.2f}원")
 
         elif payment_type == '선수금' and deposit_rate > 0:
             # 선납금: 선납 비율만큼 월대여료 할인
             # 선납 30% 기준 월대여료 15~20% 할인 추정
             discount_rate = deposit_rate / 30 * 0.18  # 30% 기준 18% 할인
             deposit_discount = base_monthly * discount_rate
-            debug['steps'].append(f"선납금 할인 ({deposit_rate}%): {base_monthly:,.0f} × {discount_rate:.4f} = -{deposit_discount:,.2f}원")
+            advance_amount = car_price * deposit_rate / 100
+            debug['steps'].append(f"선납금 {deposit_rate}%: {advance_amount:,.0f}원")
+            debug['steps'].append(f"선납금 할인: {base_monthly:,.0f} × {discount_rate:.4f} = -{deposit_discount:,.2f}원")
+        else:
+            debug['steps'].append(f"무보증 (할인 없음)")
 
         # 4. 딜러 Fee 추가
         dealer_fee = car_price * dealer_fee_rate * 0.05  # 월납입금에 미세하게 영향
+        debug['steps'].append(f"")
+        debug['steps'].append(f"=== 딜러 Fee ===")
         debug['steps'].append(f"딜러 Fee: {car_price:,.0f} × {dealer_fee_rate:.4f} × 0.05 = {dealer_fee:,.2f}원")
 
         # 최종 월납입금
         monthly_payment = base_monthly + option_addition - deposit_discount + dealer_fee
-        debug['steps'].append(f"\n최종 월납입금: {base_monthly:,.0f} + {option_addition:,.2f} - {deposit_discount:,.2f} + {dealer_fee:,.2f} = {monthly_payment:,.0f}원")
+        debug['steps'].append(f"")
+        debug['steps'].append(f"=== 최종 월납입금 ===")
+        debug['steps'].append(f"{base_monthly:,.0f} + {option_addition:,.2f} - {deposit_discount:,.2f} + {dealer_fee:,.2f} = {monthly_payment:,.0f}원")
 
         return round(monthly_payment), debug
 
