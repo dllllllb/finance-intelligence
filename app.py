@@ -85,6 +85,12 @@ def initialize_session_state():
         st.session_state.deposit_rate = None
     if 'deposit_type' not in st.session_state:
         st.session_state.deposit_type = None
+    if 'dealer_discount' not in st.session_state:
+        st.session_state.dealer_discount = 0
+    if 'dealer_fee_rate' not in st.session_state:
+        st.session_state.dealer_fee_rate = 1.0
+    if 'option_price' not in st.session_state:
+        st.session_state.option_price = 0
     if 'results' not in st.session_state:
         st.session_state.results = None
 
@@ -259,9 +265,9 @@ def render_chat_ui(data_loader):
                     st.session_state.deposit_rate = rate
                     if rate == 0:
                         st.session_state.deposit_type = '무보증'
-                        st.session_state.step = 'calculate'
+                        st.session_state.step = 'dealer_discount'
                         add_chat_message('user', '무보증 (0%)')
-                        add_chat_message('bot', '계산 중입니다... ✓')
+                        add_chat_message('bot', '딜러 할인 금액을 입력해주세요 (만원 단위)')
                         st.rerun()
                     else:
                         st.session_state.step = 'deposit_type'
@@ -275,17 +281,77 @@ def render_chat_ui(data_loader):
         with col1:
             if st.button(f"보증금 {st.session_state.deposit_rate}%", key="type_deposit", use_container_width=True):
                 st.session_state.deposit_type = '보증금'
-                st.session_state.step = 'calculate'
+                st.session_state.step = 'dealer_discount'
                 add_chat_message('user', f'보증금 {st.session_state.deposit_rate}%')
-                add_chat_message('bot', '계산 중입니다... ✓')
+                add_chat_message('bot', '딜러 할인 금액을 입력해주세요 (만원 단위)')
                 st.rerun()
         with col2:
             if st.button(f"선납금 {st.session_state.deposit_rate}%", key="type_advance", use_container_width=True):
                 st.session_state.deposit_type = '선수금'
-                st.session_state.step = 'calculate'
+                st.session_state.step = 'dealer_discount'
                 add_chat_message('user', f'선납금 {st.session_state.deposit_rate}%')
-                add_chat_message('bot', '계산 중입니다... ✓')
+                add_chat_message('bot', '딜러 할인 금액을 입력해주세요 (만원 단위)')
                 st.rerun()
+
+    elif st.session_state.step == 'dealer_discount':
+        st.markdown("**딜러 할인 금액을 입력해주세요 (만원 단위)**")
+        st.markdown("*예: 100만원 할인시 100 입력, 할인 없으면 0 입력*")
+
+        discount_input = st.number_input(
+            "딜러 할인 (만원)",
+            min_value=0,
+            max_value=10000,
+            value=0,
+            step=10,
+            key="discount_input"
+        )
+
+        if st.button("다음", key="confirm_discount", use_container_width=True):
+            st.session_state.dealer_discount = discount_input * 10000  # 만원 → 원
+            st.session_state.step = 'dealer_fee'
+            add_chat_message('user', f'{discount_input}만원 할인')
+            add_chat_message('bot', '딜러 Fee는 몇 %로 하시겠어요?')
+            st.rerun()
+
+    elif st.session_state.step == 'dealer_fee':
+        st.markdown("**딜러 Fee는 몇 %로 하시겠어요?**")
+        st.markdown("*일반적으로 0.5% ~ 2% 사이입니다*")
+
+        fee_input = st.number_input(
+            "딜러 Fee (%)",
+            min_value=0.0,
+            max_value=5.0,
+            value=1.0,
+            step=0.1,
+            key="fee_input"
+        )
+
+        if st.button("다음", key="confirm_fee", use_container_width=True):
+            st.session_state.dealer_fee_rate = fee_input
+            st.session_state.step = 'option_price'
+            add_chat_message('user', f'{fee_input}%')
+            add_chat_message('bot', '추가 옵션 가격을 입력해주세요 (만원 단위)')
+            st.rerun()
+
+    elif st.session_state.step == 'option_price':
+        st.markdown("**추가 옵션 가격을 입력해주세요 (만원 단위)**")
+        st.markdown("*예: 500만원 옵션시 500 입력, 옵션 없으면 0 입력*")
+
+        option_input = st.number_input(
+            "옵션 가격 (만원)",
+            min_value=0,
+            max_value=5000,
+            value=0,
+            step=50,
+            key="option_input"
+        )
+
+        if st.button("계산하기", key="confirm_option", use_container_width=True):
+            st.session_state.option_price = option_input * 10000  # 만원 → 원
+            st.session_state.step = 'calculate'
+            add_chat_message('user', f'{option_input}만원 옵션')
+            add_chat_message('bot', '계산 중입니다... ✓')
+            st.rerun()
 
     # 초기화 버튼
     st.markdown("---")
@@ -314,16 +380,25 @@ def render_summary_ui():
 
     if st.session_state.product_type:
         st.markdown("#### 금융 조건")
-        deposit_info = f"{st.session_state.deposit_type} {st.session_state.deposit_rate}%" if st.session_state.deposit_rate else "미선택"
+        deposit_info = f"{st.session_state.deposit_type} {st.session_state.deposit_rate}%" if st.session_state.deposit_rate is not None else "미선택"
         deposit_amount = st.session_state.selected_car['price'] * st.session_state.deposit_rate / 100 if st.session_state.deposit_rate else 0
 
-        st.info(f"""
+        condition_text = f"""
 **상품**: {'리스' if st.session_state.product_type == 'lease' else '렌트'}
-**기간**: {st.session_state.period}개월
-**주행**: 연 {st.session_state.mileage}
+**기간**: {st.session_state.period}개월 ({st.session_state.mileage})
 **{st.session_state.deposit_type if st.session_state.deposit_type else '보증금'}**: {deposit_info}
-{f"({deposit_amount:,.0f}원)" if deposit_amount > 0 else ""}
-        """)
+{f"  └ {deposit_amount:,.0f}원" if deposit_amount > 0 else ""}
+"""
+        # 추가 입력값이 있으면 표시
+        if st.session_state.step in ['calculate', 'option_price', 'dealer_fee', 'dealer_discount'] or st.session_state.results:
+            if st.session_state.dealer_discount > 0:
+                condition_text += f"**딜러 할인**: {st.session_state.dealer_discount:,.0f}원\n"
+            if st.session_state.dealer_fee_rate:
+                condition_text += f"**딜러 Fee**: {st.session_state.dealer_fee_rate}%\n"
+            if st.session_state.option_price > 0:
+                condition_text += f"**옵션 가격**: {st.session_state.option_price:,.0f}원\n"
+
+        st.info(condition_text)
 
     if st.session_state.results:
         st.markdown("#### 월납입금 결과")
@@ -394,7 +469,10 @@ def calculate_results():
         period=st.session_state.period,
         mileage=st.session_state.mileage,
         deposit_rate=st.session_state.deposit_rate,
-        payment_type=st.session_state.deposit_type
+        payment_type=st.session_state.deposit_type,
+        option_price=st.session_state.option_price,
+        dealer_discount=st.session_state.dealer_discount,
+        dealer_fee_rate=st.session_state.dealer_fee_rate / 100  # % → 소수
     )
 
     st.session_state.results = results

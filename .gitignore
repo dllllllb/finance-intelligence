@@ -35,3 +35,9 @@ Thumbs.db
 # Temporary files
 *.tmp
 .cache/
+
+# Test files
+test_*.py
+
+# Archive files
+*.zip

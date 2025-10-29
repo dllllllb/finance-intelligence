@@ -13,11 +13,6 @@ import streamlit as st
 class ModelBasedCalculator:
     """모델 기반 금융 계산기"""
 
-    # 프로토타입 고정값
-    OPTION_PRICE = 0  # 옵션금액
-    DEALER_DISCOUNT = 0  # 딜러할인금액
-    DEALER_FEE_RATE = 0.01  # 딜러Fee (1%)
-
     def __init__(self):
         """모델 파라미터 로드"""
         self.params = self._load_params()
@@ -81,7 +76,10 @@ class ModelBasedCalculator:
         period: int,
         mileage: str,
         deposit_rate: float = 0,
-        payment_type: str = '무보증'
+        payment_type: str = '무보증',
+        option_price: float = 0,
+        dealer_discount: float = 0,
+        dealer_fee_rate: float = 0.01
     ) -> Tuple[float, Dict]:
         """
         월납입금 계산 (모델 기반)
@@ -94,6 +92,9 @@ class ModelBasedCalculator:
             mileage: 주행거리
             deposit_rate: 보증금/선납금 비율 (0, 10, 20, 30)
             payment_type: '무보증', '보증금', '선수금'
+            option_price: 옵션 가격 (원)
+            dealer_discount: 딜러 할인 (원)
+            dealer_fee_rate: 딜러 Fee 비율 (0.01 = 1%)
 
         Returns:
             (월납입금, 디버깅_정보)
@@ -111,9 +112,9 @@ class ModelBasedCalculator:
             'mileage': mileage,
             'payment_type': payment_type,
             'car_price': car_price,
-            'option_price': self.OPTION_PRICE,
-            'dealer_discount': self.DEALER_DISCOUNT,
-            'dealer_fee_rate': self.DEALER_FEE_RATE,
+            'option_price': option_price,
+            'dealer_discount': dealer_discount,
+            'dealer_fee_rate': dealer_fee_rate,
             'deposit_rate': deposit_rate,
             'params': params,
             'steps': []
@@ -128,9 +129,9 @@ class ModelBasedCalculator:
         base_monthly = car_price * base_rate / 100
         debug['steps'].append(f"기본 월대여료: {car_price:,.0f} × {base_rate:.4f}% = {base_monthly:,.0f}원")
 
-        # 2. 옵션 추가 (현재는 0원)
-        option_addition = option_coeff * (self.OPTION_PRICE - self.DEALER_DISCOUNT)
-        debug['steps'].append(f"옵션 추가: {option_coeff:.6f} × ({self.OPTION_PRICE} - {self.DEALER_DISCOUNT}) = {option_addition:,.2f}원")
+        # 2. 옵션 추가
+        option_addition = option_coeff * (option_price - dealer_discount)
+        debug['steps'].append(f"옵션 추가: {option_coeff:.6f} × ({option_price:,.0f} - {dealer_discount:,.0f}) = {option_addition:,.2f}원")
 
         # 3. 보증금/선납금 할인
         deposit_discount = 0
@@ -149,8 +150,8 @@ class ModelBasedCalculator:
             debug['steps'].append(f"선납금 할인 ({deposit_rate}%): {base_monthly:,.0f} × {discount_rate:.4f} = -{deposit_discount:,.2f}원")
 
         # 4. 딜러 Fee 추가
-        dealer_fee = car_price * self.DEALER_FEE_RATE * 0.05  # 월납입금에 미세하게 영향
-        debug['steps'].append(f"딜러 Fee: {car_price:,.0f} × {self.DEALER_FEE_RATE} × 0.05 = {dealer_fee:,.2f}원")
+        dealer_fee = car_price * dealer_fee_rate * 0.05  # 월납입금에 미세하게 영향
+        debug['steps'].append(f"딜러 Fee: {car_price:,.0f} × {dealer_fee_rate:.4f} × 0.05 = {dealer_fee:,.2f}원")
 
         # 최종 월납입금
         monthly_payment = base_monthly + option_addition - deposit_discount + dealer_fee
@@ -165,7 +166,10 @@ class ModelBasedCalculator:
         period: int,
         mileage: str,
         deposit_rate: float = 0,
-        payment_type: str = '무보증'
+        payment_type: str = '무보증',
+        option_price: float = 0,
+        dealer_discount: float = 0,
+        dealer_fee_rate: float = 0.01
     ) -> List[Dict]:
         """
         모든 금융사의 월납입금 계산
@@ -177,6 +181,9 @@ class ModelBasedCalculator:
             mileage: 주행거리
             deposit_rate: 보증금/선납금 비율
             payment_type: '무보증', '보증금', '선수금'
+            option_price: 옵션 가격 (원)
+            dealer_discount: 딜러 할인 (원)
+            dealer_fee_rate: 딜러 Fee 비율 (0.01 = 1%)
 
         Returns:
             계산 결과 리스트 (월납입금 순 정렬)
@@ -192,7 +199,10 @@ class ModelBasedCalculator:
                 period=period,
                 mileage=mileage,
                 deposit_rate=deposit_rate,
-                payment_type=payment_type
+                payment_type=payment_type,
+                option_price=option_price,
+                dealer_discount=dealer_discount,
+                dealer_fee_rate=dealer_fee_rate
             )
 
             if monthly > 0:
