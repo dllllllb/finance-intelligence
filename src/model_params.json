@@ -1,0 +1,3705 @@
+{
+  "lease": {
+    "우리카드": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.7922765015527176,
+        "base_rate_std": 0.22174261614369137,
+        "option_coefficient": 0.018268070175438595,
+        "residual_rate": 0.5698536396273479,
+        "residual_rate_std": 0.05321822787448592,
+        "sample_count": 228
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.900895342853196,
+        "base_rate_std": 0.20404698435993732,
+        "option_coefficient": 0.01926414342629482,
+        "residual_rate": 0.5437851177152329,
+        "residual_rate_std": 0.048971276246384955,
+        "sample_count": 251
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 1.959631848192262,
+        "base_rate_std": 0.19842765493785136,
+        "option_coefficient": 0.0196358,
+        "residual_rate": 0.5296883564338571,
+        "residual_rate_std": 0.04762263718508433,
+        "sample_count": 400
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.525171555240154,
+        "base_rate_std": 0.1487074930652651,
+        "option_coefficient": 0.015511750000000001,
+        "residual_rate": 0.4509382401135447,
+        "residual_rate_std": 0.05353469750349543,
+        "sample_count": 160
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.5897239166599368,
+        "base_rate_std": 0.1354707660956858,
+        "option_coefficient": 0.01605430303030303,
+        "residual_rate": 0.42769939000242274,
+        "residual_rate_std": 0.0487694757944469,
+        "sample_count": 165
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.6430453545680037,
+        "base_rate_std": 0.13559910249169574,
+        "option_coefficient": 0.016483649635036495,
+        "residual_rate": 0.40850367235551865,
+        "residual_rate_std": 0.04881567689701047,
+        "sample_count": 274
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.4142823745133102,
+        "base_rate_std": 0.1026258378488036,
+        "option_coefficient": 0.014193138686131385,
+        "residual_rate": 0.32114446023361115,
+        "residual_rate_std": 0.04926040216742572,
+        "sample_count": 137
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.4733039402837187,
+        "base_rate_std": 0.0917327590583481,
+        "option_coefficient": 0.014764201680672266,
+        "residual_rate": 0.29281410866381474,
+        "residual_rate_std": 0.0440317243480071,
+        "sample_count": 119
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.5195460239457226,
+        "base_rate_std": 0.09282499747018294,
+        "option_coefficient": 0.015215052631578947,
+        "residual_rate": 0.27061790850605305,
+        "residual_rate_std": 0.04455599878568782,
+        "sample_count": 190
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.2864243322465416,
+        "base_rate_std": 0.08405069461659609,
+        "option_coefficient": 0.012934805194805195,
+        "residual_rate": 0.22814540065207503,
+        "residual_rate_std": 0.05043041676995765,
+        "sample_count": 154
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.3366637599692865,
+        "base_rate_std": 0.07095020378356076,
+        "option_coefficient": 0.0133932,
+        "residual_rate": 0.19800174401842816,
+        "residual_rate_std": 0.042570122270136464,
+        "sample_count": 150
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.3645262143528896,
+        "base_rate_std": 0.07357185540867495,
+        "option_coefficient": 0.01364962962962963,
+        "residual_rate": 0.181284271388266,
+        "residual_rate_std": 0.044143113245204965,
+        "sample_count": 243
+      }
+    },
+    "BNK캐피탈": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.554838695510696,
+        "base_rate_std": 0.3289339545590304,
+        "option_coefficient": 0.017594031746031746,
+        "residual_rate": 0.626838713077433,
+        "residual_rate_std": 0.0789441490941673,
+        "sample_count": 315
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.6400575594167919,
+        "base_rate_std": 0.2940517870514949,
+        "option_coefficient": 0.017835955555555557,
+        "residual_rate": 0.60638618573997,
+        "residual_rate_std": 0.07057242889235878,
+        "sample_count": 450
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 1.8099673369098062,
+        "base_rate_std": 0.281908791980945,
+        "option_coefficient": 0.019291187739463603,
+        "residual_rate": 0.5656078391416466,
+        "residual_rate_std": 0.06765811007542681,
+        "sample_count": 522
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.379557715776926,
+        "base_rate_std": 0.3009822930791384,
+        "option_coefficient": 0.01535327868852459,
+        "residual_rate": 0.5033592223203065,
+        "residual_rate_std": 0.10835362550848981,
+        "sample_count": 122
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.412756519379865,
+        "base_rate_std": 0.2691311178592794,
+        "option_coefficient": 0.015887106598984766,
+        "residual_rate": 0.49140765302324874,
+        "residual_rate_std": 0.09688720242934058,
+        "sample_count": 197
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.5166374784655927,
+        "base_rate_std": 0.25732843237169617,
+        "option_coefficient": 0.01662067924528302,
+        "residual_rate": 0.45401050775238666,
+        "residual_rate_std": 0.09263823565381062,
+        "sample_count": 265
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.2705059862905392,
+        "base_rate_std": 0.20398687673335464,
+        "option_coefficient": 0.013609523809523807,
+        "residual_rate": 0.39015712658054114,
+        "residual_rate_std": 0.09791370083201022,
+        "sample_count": 210
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.2942524463420937,
+        "base_rate_std": 0.18814707174267353,
+        "option_coefficient": 0.013895576923076924,
+        "residual_rate": 0.3787588257557951,
+        "residual_rate_std": 0.09031059443648332,
+        "sample_count": 312
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.3811241953704276,
+        "base_rate_std": 0.1857549358926309,
+        "option_coefficient": 0.014669282051282052,
+        "residual_rate": 0.33706038622219475,
+        "residual_rate_std": 0.08916236922846284,
+        "sample_count": 390
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.1907470491057275,
+        "base_rate_std": 0.15105221249636308,
+        "option_coefficient": 0.012390152671755724,
+        "residual_rate": 0.2855517705365635,
+        "residual_rate_std": 0.09063132749781785,
+        "sample_count": 262
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.1999331939243478,
+        "base_rate_std": 0.13166540055512407,
+        "option_coefficient": 0.012468564814814816,
+        "residual_rate": 0.28004008364539124,
+        "residual_rate_std": 0.07899924033307444,
+        "sample_count": 432
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.2584960531864946,
+        "base_rate_std": 0.14712683593540804,
+        "option_coefficient": 0.01322862155388471,
+        "residual_rate": 0.24490236808810323,
+        "residual_rate_std": 0.08827610156124482,
+        "sample_count": 399
+      }
+    },
+    "롯데캐피탈H": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.5332125082326589,
+        "base_rate_std": 0.15206215770443987,
+        "option_coefficient": 0.01523118568232662,
+        "residual_rate": 0.6320289980241619,
+        "residual_rate_std": 0.03649491784906557,
+        "sample_count": 447
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.6990109187599296,
+        "base_rate_std": 0.16319910803664334,
+        "option_coefficient": 0.016881993957703928,
+        "residual_rate": 0.5922373794976168,
+        "residual_rate_std": 0.0391677859287944,
+        "sample_count": 331
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 1.9722033873414597,
+        "base_rate_std": 0.13022029704667754,
+        "option_coefficient": 0.01956051282051282,
+        "residual_rate": 0.5266711870380497,
+        "residual_rate_std": 0.03125287129120261,
+        "sample_count": 39
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.3537799837537343,
+        "base_rate_std": 0.10516724235452295,
+        "option_coefficient": 0.0134704845814978,
+        "residual_rate": 0.5126392058486556,
+        "residual_rate_std": 0.03786020724762827,
+        "sample_count": 454
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.440742823343119,
+        "base_rate_std": 0.10693718099475084,
+        "option_coefficient": 0.01434247734138973,
+        "residual_rate": 0.4813325835964772,
+        "residual_rate_std": 0.038497385158110305,
+        "sample_count": 331
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.595225037545332,
+        "base_rate_std": 0.096156820246671,
+        "option_coefficient": 0.0158409756097561,
+        "residual_rate": 0.42571898648368045,
+        "residual_rate_std": 0.03461645528880156,
+        "sample_count": 41
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.2558349209002022,
+        "base_rate_std": 0.08705129647494288,
+        "option_coefficient": 0.012510304568527919,
+        "residual_rate": 0.397199237967903,
+        "residual_rate_std": 0.04178462230797258,
+        "sample_count": 394
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.3241379316529935,
+        "base_rate_std": 0.08390613123076957,
+        "option_coefficient": 0.013186879432624114,
+        "residual_rate": 0.36441379280656316,
+        "residual_rate_std": 0.04027494299076939,
+        "sample_count": 282
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.440770921419384,
+        "base_rate_std": 0.06854247221155292,
+        "option_coefficient": 0.014324583333333333,
+        "residual_rate": 0.30842995771869575,
+        "residual_rate_std": 0.03290038666154539,
+        "sample_count": 48
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.1794092544313772,
+        "base_rate_std": 0.06899669238757306,
+        "option_coefficient": 0.011756778523489933,
+        "residual_rate": 0.29235444734117355,
+        "residual_rate_std": 0.04139801543254383,
+        "sample_count": 298
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.2562242602251357,
+        "base_rate_std": 0.08208488343843066,
+        "option_coefficient": 0.012517236842105263,
+        "residual_rate": 0.24626544386491867,
+        "residual_rate_std": 0.0492509300630584,
+        "sample_count": 152
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.3487285647274079,
+        "base_rate_std": 0.07317551839376366,
+        "option_coefficient": 0.013421702127659576,
+        "residual_rate": 0.1907628611635553,
+        "residual_rate_std": 0.043905311036258186,
+        "sample_count": 47
+      }
+    },
+    "삼성카드": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.6631970981714388,
+        "base_rate_std": 0.30318341944980276,
+        "option_coefficient": 0.021864615384615385,
+        "residual_rate": 0.6008326964388547,
+        "residual_rate_std": 0.07276402066795264,
+        "sample_count": 13
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.7983754878652822,
+        "base_rate_std": 0.28974103534920953,
+        "option_coefficient": 0.021257894736842104,
+        "residual_rate": 0.5683898829123324,
+        "residual_rate_std": 0.06953784848381028,
+        "sample_count": 19
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 1.9238430302606178,
+        "base_rate_std": 0.15304870977469262,
+        "option_coefficient": 0.01921213114754098,
+        "residual_rate": 0.5382776727374519,
+        "residual_rate_std": 0.036731690345926236,
+        "sample_count": 122
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.410644069219621,
+        "base_rate_std": 0.052297418108100645,
+        "option_coefficient": 0.018279999999999998,
+        "residual_rate": 0.4921681350809364,
+        "residual_rate_std": 0.018827070518916248,
+        "sample_count": 11
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.4363990240357687,
+        "base_rate_std": 0.052035856384080724,
+        "option_coefficient": 0.018519999999999995,
+        "residual_rate": 0.48289635134712333,
+        "residual_rate_std": 0.01873290829826906,
+        "sample_count": 11
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.4781307749401735,
+        "base_rate_std": 0.06204376521758736,
+        "option_coefficient": 0.018886153846153844,
+        "residual_rate": 0.4678729210215375,
+        "residual_rate_std": 0.022335755478331443,
+        "sample_count": 13
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.3205338763663,
+        "base_rate_std": 0.039176268703313394,
+        "option_coefficient": 0.016280000000000003,
+        "residual_rate": 0.36614373934417604,
+        "residual_rate_std": 0.01880460897759043,
+        "sample_count": 11
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.3377585942326915,
+        "base_rate_std": 0.039056843875784654,
+        "option_coefficient": 0.01652,
+        "residual_rate": 0.35787587476830807,
+        "residual_rate_std": 0.018747285060376647,
+        "sample_count": 11
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.3644223752409235,
+        "base_rate_std": 0.0405087808711652,
+        "option_coefficient": 0.016679999999999997,
+        "residual_rate": 0.3450772598843567,
+        "residual_rate_std": 0.01944421481815933,
+        "sample_count": 11
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.2652565983412547,
+        "base_rate_std": 0.02669297234002797,
+        "option_coefficient": 0.015444000000000003,
+        "residual_rate": 0.2408460409952471,
+        "residual_rate_std": 0.016015783404016763,
+        "sample_count": 10
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.2851552855088368,
+        "base_rate_std": 0.028764487714082052,
+        "option_coefficient": 0.015576000000000001,
+        "residual_rate": 0.22890682869469794,
+        "residual_rate_std": 0.017258692628449226,
+        "sample_count": 10
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.3084072048719662,
+        "base_rate_std": 0.03339043003173611,
+        "option_coefficient": 0.015479999999999999,
+        "residual_rate": 0.21495567707682034,
+        "residual_rate_std": 0.020034258019041674,
+        "sample_count": 11
+      }
+    },
+    "메리츠캐피탈": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.8892665699480033,
+        "base_rate_std": 0.12454465029187829,
+        "option_coefficient": 0.018909391304347822,
+        "residual_rate": 0.546576023212479,
+        "residual_rate_std": 0.029890716070050758,
+        "sample_count": 23
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.9377594300912528,
+        "base_rate_std": 0.13665016083255863,
+        "option_coefficient": 0.019385000000000003,
+        "residual_rate": 0.5349377367780993,
+        "residual_rate_std": 0.032796038599814066,
+        "sample_count": 56
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.168258272880912,
+        "base_rate_std": 0.22849968970732906,
+        "option_coefficient": 0.02164781818181818,
+        "residual_rate": 0.47961801450858116,
+        "residual_rate_std": 0.054839925529758964,
+        "sample_count": 11
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.4673894101191831,
+        "base_rate_std": 0.16934245705339,
+        "option_coefficient": 0.01497261818181818,
+        "residual_rate": 0.4717398123570943,
+        "residual_rate_std": 0.060963284539220404,
+        "sample_count": 55
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.5395523157363604,
+        "base_rate_std": 0.13751385797172244,
+        "option_coefficient": 0.015843772727272724,
+        "residual_rate": 0.4457611663349102,
+        "residual_rate_std": 0.049504988869820084,
+        "sample_count": 44
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.552872601271381,
+        "base_rate_std": 0.11393244339144847,
+        "option_coefficient": 0.01623127777777778,
+        "residual_rate": 0.44096586354230294,
+        "residual_rate_std": 0.04101567962092145,
+        "sample_count": 72
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.3168838607669033,
+        "base_rate_std": 0.12474999697897086,
+        "option_coefficient": 0.013426779661016951,
+        "residual_rate": 0.36789574683188625,
+        "residual_rate_std": 0.05987999854990601,
+        "sample_count": 59
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.3660640161722104,
+        "base_rate_std": 0.1270720225050841,
+        "option_coefficient": 0.013863555555555554,
+        "residual_rate": 0.344289272237339,
+        "residual_rate_std": 0.06099457080244036,
+        "sample_count": 72
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.4433502283831139,
+        "base_rate_std": 0.10147386521768245,
+        "option_coefficient": 0.015285875,
+        "residual_rate": 0.30719189037610545,
+        "residual_rate_std": 0.04870745530448759,
+        "sample_count": 16
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.196665808444358,
+        "base_rate_std": 0.11138141339089866,
+        "option_coefficient": 0.012296583333333333,
+        "residual_rate": 0.2820005149333851,
+        "residual_rate_std": 0.06682884803453919,
+        "sample_count": 72
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.2454077615800505,
+        "base_rate_std": 0.09625784125852718,
+        "option_coefficient": 0.012714761904761908,
+        "residual_rate": 0.2527553430519697,
+        "residual_rate_std": 0.057754704755116314,
+        "sample_count": 63
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.3428779895096357,
+        "base_rate_std": 0.07810759236838022,
+        "option_coefficient": 0.01440509090909091,
+        "residual_rate": 0.1942732062942185,
+        "residual_rate_std": 0.046864555421028166,
+        "sample_count": 11
+      }
+    },
+    "롯데캐피탈": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 2.3238057642774037,
+        "base_rate_std": 0.0007132759419123964,
+        "option_coefficient": 0.023140000000000004,
+        "residual_rate": 0.44228661657342316,
+        "residual_rate_std": 0.00017118622605898174,
+        "sample_count": 3
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 2.38320991522124,
+        "base_rate_std": 0.03989697240233696,
+        "option_coefficient": 0.023819999999999997,
+        "residual_rate": 0.4280296203469025,
+        "residual_rate_std": 0.00957527337656087,
+        "sample_count": 4
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.5317545502468057,
+        "base_rate_std": 0.07161018809253482,
+        "option_coefficient": 0.025286666666666666,
+        "residual_rate": 0.39237890794076663,
+        "residual_rate_std": 0.017186445142208347,
+        "sample_count": 3
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.21172461081742,
+        "base_rate_std": 0.18874673805490838,
+        "option_coefficient": 0.016173617021276596,
+        "residual_rate": 0.5637791401057288,
+        "residual_rate_std": 0.06794882569976701,
+        "sample_count": 94
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.3515941942159024,
+        "base_rate_std": 0.1911904185186595,
+        "option_coefficient": 0.01693848484848485,
+        "residual_rate": 0.5134260900822751,
+        "residual_rate_std": 0.06882855066671742,
+        "sample_count": 66
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.5766467519867549,
+        "base_rate_std": 0.1359433911014374,
+        "option_coefficient": 0.018452727272727273,
+        "residual_rate": 0.43240716928476824,
+        "residual_rate_std": 0.04893962079651747,
+        "sample_count": 33
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.1603974467338318,
+        "base_rate_std": 0.18676229584754475,
+        "option_coefficient": 0.01453767441860465,
+        "residual_rate": 0.44300922556776073,
+        "residual_rate_std": 0.08964590200682149,
+        "sample_count": 86
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.2826994836907315,
+        "base_rate_std": 0.15692464887043894,
+        "option_coefficient": 0.015091333333333335,
+        "residual_rate": 0.3843042478284488,
+        "residual_rate_std": 0.0753238314578107,
+        "sample_count": 60
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.4850726364358597,
+        "base_rate_std": 0.15504484081761613,
+        "option_coefficient": 0.01641857142857143,
+        "residual_rate": 0.2871651345107874,
+        "residual_rate_std": 0.07442152359245574,
+        "sample_count": 42
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.0867461318691662,
+        "base_rate_std": 0.15434475186625224,
+        "option_coefficient": 0.013318620689655171,
+        "residual_rate": 0.3479523208785002,
+        "residual_rate_std": 0.09260685111975134,
+        "sample_count": 87
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.1836305236126112,
+        "base_rate_std": 0.13829447549209298,
+        "option_coefficient": 0.013778484848484847,
+        "residual_rate": 0.28982168583243334,
+        "residual_rate_std": 0.0829766852952558,
+        "sample_count": 66
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.3457784431097721,
+        "base_rate_std": 0.14618615704579774,
+        "option_coefficient": 0.014860434782608692,
+        "residual_rate": 0.19253293413413672,
+        "residual_rate_std": 0.08771169422747865,
+        "sample_count": 46
+      }
+    },
+    "산은엑셀": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.820385426593211,
+        "base_rate_std": 0.24085407491847835,
+        "option_coefficient": 0.01845328571428571,
+        "residual_rate": 0.5631074976176295,
+        "residual_rate_std": 0.0578049779804348,
+        "sample_count": 140
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.5113997876211376,
+        "base_rate_std": 0.1731906723529572,
+        "option_coefficient": 0.015332190476190477,
+        "residual_rate": 0.45589607645639035,
+        "residual_rate_std": 0.062348642047064605,
+        "sample_count": 105
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.3302956313780172,
+        "base_rate_std": 0.12371311617309369,
+        "option_coefficient": 0.013416374269005849,
+        "residual_rate": 0.36145809693855174,
+        "residual_rate_std": 0.059382295763084965,
+        "sample_count": 171
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.221121566925216,
+        "base_rate_std": 0.09550328469124149,
+        "option_coefficient": 0.012292409638554214,
+        "residual_rate": 0.2673270598448704,
+        "residual_rate_std": 0.05730197081474489,
+        "sample_count": 166
+      }
+    },
+    "농협캐피탈": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.9005578274459227,
+        "base_rate_std": 0.16737204718923923,
+        "option_coefficient": 0.01909204680851064,
+        "residual_rate": 0.5438661214129786,
+        "residual_rate_std": 0.040169291325417425,
+        "sample_count": 94
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.918598784865361,
+        "base_rate_std": 0.17175174516968278,
+        "option_coefficient": 0.01925088103448276,
+        "residual_rate": 0.5395362916323133,
+        "residual_rate_std": 0.041220418840723874,
+        "sample_count": 116
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.011139962523646,
+        "base_rate_std": 0.20932806362106857,
+        "option_coefficient": 0.020154160451977404,
+        "residual_rate": 0.5173264089943249,
+        "residual_rate_std": 0.05023873526905646,
+        "sample_count": 177
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.6759327910931137,
+        "base_rate_std": 0.09962836240861145,
+        "option_coefficient": 0.01694567368421053,
+        "residual_rate": 0.39666419520647905,
+        "residual_rate_std": 0.03586621046710013,
+        "sample_count": 38
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.674036244481766,
+        "base_rate_std": 0.11269712421759515,
+        "option_coefficient": 0.01686311481481481,
+        "residual_rate": 0.3973469519865642,
+        "residual_rate_std": 0.04057096471833425,
+        "sample_count": 54
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.7999979281168716,
+        "base_rate_std": 0.09893969196542698,
+        "option_coefficient": 0.018034316129032255,
+        "residual_rate": 0.3520007458779261,
+        "residual_rate_std": 0.035618289107553706,
+        "sample_count": 93
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.5182894717645896,
+        "base_rate_std": 0.059854874292134305,
+        "option_coefficient": 0.015153207692307694,
+        "residual_rate": 0.2712210535529971,
+        "residual_rate_std": 0.028730339660224452,
+        "sample_count": 26
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.43798830721562,
+        "base_rate_std": 0.13097642729190845,
+        "option_coefficient": 0.01435352156862745,
+        "residual_rate": 0.3097656125365025,
+        "residual_rate_std": 0.06286868510011606,
+        "sample_count": 51
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.4749937925956949,
+        "base_rate_std": 0.12176134321703719,
+        "option_coefficient": 0.014728228846153844,
+        "residual_rate": 0.29200297955406634,
+        "residual_rate_std": 0.05844544474417785,
+        "sample_count": 104
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.3532326069150862,
+        "base_rate_std": 0.06303089222349577,
+        "option_coefficient": 0.013512151515151515,
+        "residual_rate": 0.18806043585094837,
+        "residual_rate_std": 0.03781853533409748,
+        "sample_count": 33
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.3269629322084413,
+        "base_rate_std": 0.09019564742949006,
+        "option_coefficient": 0.013334153623188408,
+        "residual_rate": 0.20382224067493535,
+        "residual_rate_std": 0.05411738845769404,
+        "sample_count": 69
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.3850459854333537,
+        "base_rate_std": 0.08973661847290076,
+        "option_coefficient": 0.013834542528735637,
+        "residual_rate": 0.16897240873998795,
+        "residual_rate_std": 0.05384197108374047,
+        "sample_count": 87
+      }
+    },
+    "산은캐피탈": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.7621897716622121,
+        "base_rate_std": 0.2766043979270027,
+        "option_coefficient": 0.017995185185185184,
+        "residual_rate": 0.5770744548010691,
+        "residual_rate_std": 0.06638505550248064,
+        "sample_count": 270
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.8471686637117846,
+        "base_rate_std": 0.2888424107236078,
+        "option_coefficient": 0.01896754716981132,
+        "residual_rate": 0.5566795207091717,
+        "residual_rate_std": 0.06932217857366588,
+        "sample_count": 212
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.037133132577085,
+        "base_rate_std": 0.28201428385369703,
+        "option_coefficient": 0.02071375,
+        "residual_rate": 0.5110880481814996,
+        "residual_rate_std": 0.0676834281248873,
+        "sample_count": 208
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.5016723136590564,
+        "base_rate_std": 0.18137182018240536,
+        "option_coefficient": 0.015343981042654027,
+        "residual_rate": 0.45939796708273967,
+        "residual_rate_std": 0.06529385526566593,
+        "sample_count": 211
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.5681734791912543,
+        "base_rate_std": 0.20795831512971497,
+        "option_coefficient": 0.01616407894736842,
+        "residual_rate": 0.43545754749114857,
+        "residual_rate_std": 0.07486499344669738,
+        "sample_count": 152
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.700002664141417,
+        "base_rate_std": 0.21802580304834532,
+        "option_coefficient": 0.017476197183098594,
+        "residual_rate": 0.38799904090908993,
+        "residual_rate_std": 0.07848928909740431,
+        "sample_count": 142
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.3638712711244634,
+        "base_rate_std": 0.13854352449507437,
+        "option_coefficient": 0.013879406779661017,
+        "residual_rate": 0.34534178986025776,
+        "residual_rate_std": 0.0665008917576357,
+        "sample_count": 236
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.4186404235957073,
+        "base_rate_std": 0.15843635104613596,
+        "option_coefficient": 0.014599021333333333,
+        "residual_rate": 0.3190525966740605,
+        "residual_rate_std": 0.07604944850214523,
+        "sample_count": 150
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.500501721703147,
+        "base_rate_std": 0.15947418098960917,
+        "option_coefficient": 0.015357560975609759,
+        "residual_rate": 0.2797591735824895,
+        "residual_rate_std": 0.07654760687501241,
+        "sample_count": 164
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.2470530947702299,
+        "base_rate_std": 0.11466476321598948,
+        "option_coefficient": 0.012659157088122607,
+        "residual_rate": 0.251768143137862,
+        "residual_rate_std": 0.06879885792959367,
+        "sample_count": 261
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.2910120027937533,
+        "base_rate_std": 0.13049638530680902,
+        "option_coefficient": 0.013221506849315069,
+        "residual_rate": 0.22539279832374792,
+        "residual_rate_std": 0.07829783118408541,
+        "sample_count": 146
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.361380407421435,
+        "base_rate_std": 0.13042576785829466,
+        "option_coefficient": 0.013903170731707317,
+        "residual_rate": 0.18317175554713896,
+        "residual_rate_std": 0.07825546071497679,
+        "sample_count": 164
+      }
+    },
+    "MG캐피탈": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.5970269795636263,
+        "base_rate_std": 0.1356897652433847,
+        "option_coefficient": 0.015928928571428573,
+        "residual_rate": 0.6167135249047299,
+        "residual_rate_std": 0.03256554365841233,
+        "sample_count": 112
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.6742383624840638,
+        "base_rate_std": 0.16131634721769333,
+        "option_coefficient": 0.01670179894179894,
+        "residual_rate": 0.5981827930038247,
+        "residual_rate_std": 0.0387159233322464,
+        "sample_count": 189
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 1.8746854156251318,
+        "base_rate_std": 0.16791842671042523,
+        "option_coefficient": 0.018711153846153846,
+        "residual_rate": 0.5500755002499684,
+        "residual_rate_std": 0.04030042241050206,
+        "sample_count": 156
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.3958651045146604,
+        "base_rate_std": 0.057526271737855,
+        "option_coefficient": 0.013928108108108109,
+        "residual_rate": 0.4974885623747222,
+        "residual_rate_std": 0.020709457825627803,
+        "sample_count": 74
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.4345513768975195,
+        "base_rate_std": 0.09372486659280779,
+        "option_coefficient": 0.01431170731707317,
+        "residual_rate": 0.4835615043168929,
+        "residual_rate_std": 0.03374095197341081,
+        "sample_count": 123
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.6295051688653934,
+        "base_rate_std": 0.10481245854677287,
+        "option_coefficient": 0.016273513513513513,
+        "residual_rate": 0.41337813920845845,
+        "residual_rate_std": 0.03773248507683823,
+        "sample_count": 111
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.3216442379435915,
+        "base_rate_std": 0.07988185376887635,
+        "option_coefficient": 0.013194871794871795,
+        "residual_rate": 0.36561076578707613,
+        "residual_rate_std": 0.038343289809060654,
+        "sample_count": 39
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.3610821114530542,
+        "base_rate_std": 0.0864715675835593,
+        "option_coefficient": 0.013590714285714286,
+        "residual_rate": 0.346680586502534,
+        "residual_rate_std": 0.04150635244010846,
+        "sample_count": 56
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.476630724026402,
+        "base_rate_std": 0.07433727587851603,
+        "option_coefficient": 0.014749397590361448,
+        "residual_rate": 0.291217252467327,
+        "residual_rate_std": 0.03568189242168769,
+        "sample_count": 83
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.2307101520744246,
+        "base_rate_std": 0.07133223569048608,
+        "option_coefficient": 0.012287346938775512,
+        "residual_rate": 0.26157390875534514,
+        "residual_rate_std": 0.04279934141429165,
+        "sample_count": 49
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.2474280726845501,
+        "base_rate_std": 0.06692545283788802,
+        "option_coefficient": 0.012455862068965517,
+        "residual_rate": 0.25154315638926983,
+        "residual_rate_std": 0.0401552717027328,
+        "sample_count": 58
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.3364478573634297,
+        "base_rate_std": 0.05791727052370228,
+        "option_coefficient": 0.013350476190476187,
+        "residual_rate": 0.19813128558194207,
+        "residual_rate_std": 0.034750362314221364,
+        "sample_count": 84
+      }
+    },
+    "하나캐피탈": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.7087561374795417,
+        "base_rate_std": 0.0,
+        "option_coefficient": 0.01708,
+        "residual_rate": 0.58989852700491,
+        "residual_rate_std": 0.0,
+        "sample_count": 1
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.9343478260869567,
+        "base_rate_std": 0.0,
+        "option_coefficient": 0.01934,
+        "residual_rate": 0.3036347826086957,
+        "residual_rate_std": 0.0,
+        "sample_count": 1
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.8839140865926574,
+        "base_rate_std": 0.08269199591228596,
+        "option_coefficient": 0.01882,
+        "residual_rate": 0.32179092882664334,
+        "residual_rate_std": 0.029769118528422914,
+        "sample_count": 3
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.6975919732441471,
+        "base_rate_std": 0.0,
+        "option_coefficient": 0.01696,
+        "residual_rate": 0.18515585284280933,
+        "residual_rate_std": 0.0,
+        "sample_count": 1
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.5196989966555183,
+        "base_rate_std": 0.0,
+        "option_coefficient": 0.0152,
+        "residual_rate": 0.08818060200668898,
+        "residual_rate_std": 0.0,
+        "sample_count": 1
+      }
+    },
+    "우리금융캐피탈": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.9504351226339198,
+        "base_rate_std": 0.18853954499159947,
+        "option_coefficient": 0.0194666,
+        "residual_rate": 0.5318955705678593,
+        "residual_rate_std": 0.045249490797983884,
+        "sample_count": 11
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 2.0507122207603894,
+        "base_rate_std": 0.26247697894526795,
+        "option_coefficient": 0.020472318181818182,
+        "residual_rate": 0.5078290670175064,
+        "residual_rate_std": 0.06299447494686433,
+        "sample_count": 22
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.2469184588099766,
+        "base_rate_std": 0.28015564269388676,
+        "option_coefficient": 0.022444699999999998,
+        "residual_rate": 0.4607395698856056,
+        "residual_rate_std": 0.06723735424653285,
+        "sample_count": 4
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.5828535480065984,
+        "base_rate_std": 0.15098446361699158,
+        "option_coefficient": 0.015802603636363634,
+        "residual_rate": 0.4301727227176244,
+        "residual_rate_std": 0.054354406902116965,
+        "sample_count": 55
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.7027402365066024,
+        "base_rate_std": 0.16885969644684318,
+        "option_coefficient": 0.017001748148148147,
+        "residual_rate": 0.38701351485762314,
+        "residual_rate_std": 0.060789490720863565,
+        "sample_count": 27
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.8982331217127275,
+        "base_rate_std": 0.18855202112004357,
+        "option_coefficient": 0.0189666,
+        "residual_rate": 0.31663607618341805,
+        "residual_rate_std": 0.06787872760321569,
+        "sample_count": 3
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.4418158382400146,
+        "base_rate_std": 0.10944704079108199,
+        "option_coefficient": 0.01439791428571428,
+        "residual_rate": 0.30792839764479313,
+        "residual_rate_std": 0.05253457957971934,
+        "sample_count": 14
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.4712459201347783,
+        "base_rate_std": 0.07725778903136309,
+        "option_coefficient": 0.014691559999999998,
+        "residual_rate": 0.2938019583353063,
+        "residual_rate_std": 0.037083738735054286,
+        "sample_count": 15
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.3386880785226403,
+        "base_rate_std": 0.07670332677355182,
+        "option_coefficient": 0.0133672,
+        "residual_rate": 0.19678715288641574,
+        "residual_rate_std": 0.046021996064131133,
+        "sample_count": 8
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.3320676840847674,
+        "base_rate_std": 0.06656340082913366,
+        "option_coefficient": 0.01330310769230769,
+        "residual_rate": 0.20075938954913972,
+        "residual_rate_std": 0.039938040497480204,
+        "sample_count": 13
+      }
+    },
+    "KB캐피탈": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.7769727222108462,
+        "base_rate_std": 0.122690151788311,
+        "option_coefficient": 0.017724,
+        "residual_rate": 0.5735265466693968,
+        "residual_rate_std": 0.029445636429194677,
+        "sample_count": 2
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.809610549533154,
+        "base_rate_std": 0.1750242819275203,
+        "option_coefficient": 0.018295,
+        "residual_rate": 0.565693468112043,
+        "residual_rate_std": 0.042005827662604855,
+        "sample_count": 2
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.462238315217391,
+        "base_rate_std": 0.05829918478260865,
+        "option_coefficient": 0.024616,
+        "residual_rate": 0.40906280434782605,
+        "residual_rate_std": 0.013991804347826098,
+        "sample_count": 2
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.5451794438444892,
+        "base_rate_std": 0.06909923375087844,
+        "option_coefficient": 0.015431224489795916,
+        "residual_rate": 0.4437354002159839,
+        "residual_rate_std": 0.024875724150316244,
+        "sample_count": 49
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.611212395675328,
+        "base_rate_std": 0.09321374085998152,
+        "option_coefficient": 0.016093894736842106,
+        "residual_rate": 0.4199635375568819,
+        "residual_rate_std": 0.03355694670959335,
+        "sample_count": 38
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.7416280089563363,
+        "base_rate_std": 0.07706409522599772,
+        "option_coefficient": 0.01739951515151515,
+        "residual_rate": 0.373013916775719,
+        "residual_rate_std": 0.027743074281359196,
+        "sample_count": 33
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.3821268054024163,
+        "base_rate_std": 0.05923276586801691,
+        "option_coefficient": 0.01380490909090909,
+        "residual_rate": 0.3365791334068402,
+        "residual_rate_std": 0.028431727616648115,
+        "sample_count": 22
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.4154964148777724,
+        "base_rate_std": 0.03462135547341209,
+        "option_coefficient": 0.014140285714285713,
+        "residual_rate": 0.32056172085866924,
+        "residual_rate_std": 0.016618250627237794,
+        "sample_count": 7
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.491838694562245,
+        "base_rate_std": 0.027655067327102125,
+        "option_coefficient": 0.014903272727272725,
+        "residual_rate": 0.2839174266101224,
+        "residual_rate_std": 0.013274432317009005,
+        "sample_count": 11
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.2670139519859096,
+        "base_rate_std": 0.026195167895624455,
+        "option_coefficient": 0.01265909090909091,
+        "residual_rate": 0.23979162880845425,
+        "residual_rate_std": 0.01571710073737468,
+        "sample_count": 11
+      }
+    },
+    "우리카드일반잔가": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 2.0901966709273574,
+        "base_rate_std": 0.00012132594578999823,
+        "option_coefficient": 0.020890000000000002,
+        "residual_rate": 0.4983527989774341,
+        "residual_rate_std": 2.9118226989550282e-05,
+        "sample_count": 6
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 2.168887598490637,
+        "base_rate_std": 0.13008942106746227,
+        "option_coefficient": 0.021822222222222222,
+        "residual_rate": 0.47946697636224705,
+        "residual_rate_std": 0.03122146105619095,
+        "sample_count": 9
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.3413442178173316,
+        "base_rate_std": 0.14649789886069403,
+        "option_coefficient": 0.023595384615384615,
+        "residual_rate": 0.43807738772384053,
+        "residual_rate_std": 0.03515949572656656,
+        "sample_count": 13
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.7868176127826185,
+        "base_rate_std": 0.08987861632446405,
+        "option_coefficient": 0.0178625,
+        "residual_rate": 0.35674565939825736,
+        "residual_rate_std": 0.032356301876807034,
+        "sample_count": 8
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.7857829411321866,
+        "base_rate_std": 0.08478889120747984,
+        "option_coefficient": 0.01794888888888889,
+        "residual_rate": 0.3571181411924129,
+        "residual_rate_std": 0.03052400083469272,
+        "sample_count": 9
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.8976092441055994,
+        "base_rate_std": 0.09507797514089951,
+        "option_coefficient": 0.019100000000000002,
+        "residual_rate": 0.3168606721219842,
+        "residual_rate_std": 0.03422807105072379,
+        "sample_count": 13
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.5686405059134645,
+        "base_rate_std": 7.308402398359584e-05,
+        "option_coefficient": 0.01568,
+        "residual_rate": 0.24705255716153704,
+        "residual_rate_std": 3.508033151213688e-05,
+        "sample_count": 6
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.625806760495143,
+        "base_rate_std": 6.145435282419794e-05,
+        "option_coefficient": 0.01625,
+        "residual_rate": 0.21961275496233137,
+        "residual_rate_std": 2.9498089355601685e-05,
+        "sample_count": 6
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.4025991697094777,
+        "base_rate_std": 5.5334536925056834e-05,
+        "option_coefficient": 0.01402,
+        "residual_rate": 0.1584404981743133,
+        "residual_rate_std": 3.3200722155053456e-05,
+        "sample_count": 6
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.4504244828838608,
+        "base_rate_std": 0.0077045862765170526,
+        "option_coefficient": 0.014574285714285715,
+        "residual_rate": 0.12974531026968356,
+        "residual_rate_std": 0.0046227517659101795,
+        "sample_count": 7
+      }
+    },
+    "신한카드일반잔가": {
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 2.1316770576306094,
+        "base_rate_std": 0.0011759683059902049,
+        "option_coefficient": 0.02103,
+        "residual_rate": 0.4883975061686538,
+        "residual_rate_std": 0.0002822323934376647,
+        "sample_count": 2
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.2322399055020217,
+        "base_rate_std": 0.01807132156415221,
+        "option_coefficient": 0.0220512,
+        "residual_rate": 0.46426242267951495,
+        "residual_rate_std": 0.004337117175396543,
+        "sample_count": 5
+      }
+    },
+    "JB우리캐피탈": {
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 2.3741717752701526,
+        "base_rate_std": 3.2046385898265584e-05,
+        "option_coefficient": 0.02368,
+        "residual_rate": 0.43019877393516337,
+        "residual_rate_std": 7.691132615561536e-06,
+        "sample_count": 2
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.4933070120201752,
+        "base_rate_std": 0.0019909943175930515,
+        "option_coefficient": 0.024866666666666665,
+        "residual_rate": 0.401606317115158,
+        "residual_rate_std": 0.0004778386362223005,
+        "sample_count": 3
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 2.0296160079169514,
+        "base_rate_std": 1.8264779526599995e-06,
+        "option_coefficient": 0.02026,
+        "residual_rate": 0.2693382371498974,
+        "residual_rate_std": 6.575320629642611e-07,
+        "sample_count": 2
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.7699109896411027,
+        "base_rate_std": 4.654751388677436e-05,
+        "option_coefficient": 0.017669999999999998,
+        "residual_rate": 0.15044272497227074,
+        "residual_rate_std": 2.234280666568722e-05,
+        "sample_count": 2
+      }
+    },
+    "iM캐피탈": {
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.3745808007445328,
+        "base_rate_std": 0.11554967682395725,
+        "option_coefficient": 0.013593124999999998,
+        "residual_rate": 0.5051509117319682,
+        "residual_rate_std": 0.04159788365662461,
+        "sample_count": 128
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.3991021319463515,
+        "base_rate_std": 0.1055257245534863,
+        "option_coefficient": 0.013833695652173912,
+        "residual_rate": 0.49632323249931337,
+        "residual_rate_std": 0.03798926083925506,
+        "sample_count": 184
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.4957407087027,
+        "base_rate_std": 0.09916258308922012,
+        "option_coefficient": 0.014778449612403101,
+        "residual_rate": 0.4615333448670281,
+        "residual_rate_std": 0.03569852991211925,
+        "sample_count": 258
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.2241760515029818,
+        "base_rate_std": 0.08873274695121221,
+        "option_coefficient": 0.012131616766467065,
+        "residual_rate": 0.4123954952785688,
+        "residual_rate_std": 0.04259171853658186,
+        "sample_count": 167
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.2569675491746655,
+        "base_rate_std": 0.08549021520197726,
+        "option_coefficient": 0.012457849462365594,
+        "residual_rate": 0.39665557639616056,
+        "residual_rate_std": 0.041035303296949086,
+        "sample_count": 186
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.3388846822693241,
+        "base_rate_std": 0.07929956863685922,
+        "option_coefficient": 0.01324299674267101,
+        "residual_rate": 0.3573353525107244,
+        "residual_rate_std": 0.03806379294569241,
+        "sample_count": 307
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.1300746104121007,
+        "base_rate_std": 0.06894432088790817,
+        "option_coefficient": 0.01121689440993789,
+        "residual_rate": 0.3219552337527396,
+        "residual_rate_std": 0.0413665925327449,
+        "sample_count": 161
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.1627942804446,
+        "base_rate_std": 0.06796607825808648,
+        "option_coefficient": 0.011543351955307266,
+        "residual_rate": 0.30232343173323983,
+        "residual_rate_std": 0.04077964695485189,
+        "sample_count": 179
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.2188317796097257,
+        "base_rate_std": 0.05046399284131015,
+        "option_coefficient": 0.012092367491166076,
+        "residual_rate": 0.2687009322341645,
+        "residual_rate_std": 0.03027839570478609,
+        "sample_count": 283
+      }
+    },
+    "롯데오토": {
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.5669507925281478,
+        "base_rate_std": 0.1303143393634734,
+        "option_coefficient": 0.014892416000000002,
+        "residual_rate": 0.4358977146898667,
+        "residual_rate_std": 0.04691316217085042,
+        "sample_count": 25
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.551649746060895,
+        "base_rate_std": 0.08596125076154863,
+        "option_coefficient": 0.014802049411764703,
+        "residual_rate": 0.44140609141807774,
+        "residual_rate_std": 0.030946050274157512,
+        "sample_count": 85
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.5996060330472284,
+        "base_rate_std": 0.0979932746642449,
+        "option_coefficient": 0.015402594871794873,
+        "residual_rate": 0.42414182810299783,
+        "residual_rate_std": 0.03527757887912817,
+        "sample_count": 117
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.3968162193999563,
+        "base_rate_std": 0.11275077543392482,
+        "option_coefficient": 0.013673516666666668,
+        "residual_rate": 0.329528214688021,
+        "residual_rate_std": 0.05412037220828389,
+        "sample_count": 12
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.4155977276007692,
+        "base_rate_std": 0.09349890637480752,
+        "option_coefficient": 0.01354495625,
+        "residual_rate": 0.3205130907516308,
+        "residual_rate_std": 0.04487947505990761,
+        "sample_count": 32
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.4416519547827338,
+        "base_rate_std": 0.0847701718918486,
+        "option_coefficient": 0.013724451162790698,
+        "residual_rate": 0.3080070617042878,
+        "residual_rate_std": 0.04068968250808734,
+        "sample_count": 43
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.2932369445049512,
+        "base_rate_std": 0.08850486183975845,
+        "option_coefficient": 0.012627216666666665,
+        "residual_rate": 0.22405783329702925,
+        "residual_rate_std": 0.053102917103855056,
+        "sample_count": 12
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.3005084181349484,
+        "base_rate_std": 0.08868514840393732,
+        "option_coefficient": 0.012647276923076923,
+        "residual_rate": 0.21969494911903092,
+        "residual_rate_std": 0.053211089042362374,
+        "sample_count": 13
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.3243403752341518,
+        "base_rate_std": 0.0772252582876103,
+        "option_coefficient": 0.012806444444444443,
+        "residual_rate": 0.20539577485950902,
+        "residual_rate_std": 0.04633515497256616,
+        "sample_count": 27
+      }
+    },
+    "iM캐피탈저금리": {
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.5322757549872266,
+        "base_rate_std": 0.05936822309492566,
+        "option_coefficient": 0.015302857142857142,
+        "residual_rate": 0.4483807282045985,
+        "residual_rate_std": 0.021372560314173228,
+        "sample_count": 56
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.5653558051494105,
+        "base_rate_std": 0.10819388161905144,
+        "option_coefficient": 0.015624905660377357,
+        "residual_rate": 0.43647191014621217,
+        "residual_rate_std": 0.038949797382858524,
+        "sample_count": 159
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.5832768788954639,
+        "base_rate_std": 0.13065638107923247,
+        "option_coefficient": 0.01579827411167513,
+        "residual_rate": 0.4300203235976331,
+        "residual_rate_std": 0.04703629718852368,
+        "sample_count": 197
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.4031929288110303,
+        "base_rate_std": 0.07175444236173854,
+        "option_coefficient": 0.014012786885245902,
+        "residual_rate": 0.3264673941707054,
+        "residual_rate_std": 0.03444213233363451,
+        "sample_count": 61
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.3554958154291867,
+        "base_rate_std": 0.099945460741694,
+        "option_coefficient": 0.013532438162544168,
+        "residual_rate": 0.34936200859399025,
+        "residual_rate_std": 0.04797382115601311,
+        "sample_count": 283
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.3941263522582814,
+        "base_rate_std": 0.09482201327537608,
+        "option_coefficient": 0.013917679999999998,
+        "residual_rate": 0.3308193509160249,
+        "residual_rate_std": 0.04551456637218052,
+        "sample_count": 250
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.2762950065436556,
+        "base_rate_std": 0.054990144084388876,
+        "option_coefficient": 0.012748767123287671,
+        "residual_rate": 0.2342229960738066,
+        "residual_rate_std": 0.03299408645063333,
+        "sample_count": 73
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.2398178684717511,
+        "base_rate_std": 0.07839934545986454,
+        "option_coefficient": 0.01238026755852843,
+        "residual_rate": 0.2561092789169493,
+        "residual_rate_std": 0.04703960727591873,
+        "sample_count": 299
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.2735512402483258,
+        "base_rate_std": 0.07582764750892726,
+        "option_coefficient": 0.01271643410852713,
+        "residual_rate": 0.23586925585100452,
+        "residual_rate_std": 0.045496588505356365,
+        "sample_count": 258
+      }
+    },
+    "신한카드": {
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.5993853954860195,
+        "base_rate_std": 0.05079569544698602,
+        "option_coefficient": 0.015983714285714285,
+        "residual_rate": 0.424221257625033,
+        "residual_rate_std": 0.018286450360914953,
+        "sample_count": 21
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.6401520689397404,
+        "base_rate_std": 0.03978913853193277,
+        "option_coefficient": 0.01639431578947368,
+        "residual_rate": 0.4095452551816935,
+        "residual_rate_std": 0.01432408987149582,
+        "sample_count": 19
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.4463549792695682,
+        "base_rate_std": 0.0448357971064279,
+        "option_coefficient": 0.014453454545454545,
+        "residual_rate": 0.30574960995060735,
+        "residual_rate_std": 0.021521182611085404,
+        "sample_count": 22
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.4828909830490777,
+        "base_rate_std": 0.039926520930236555,
+        "option_coefficient": 0.014816000000000001,
+        "residual_rate": 0.28821232813644276,
+        "residual_rate_std": 0.01916473004651358,
+        "sample_count": 24
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.3416849423937605,
+        "base_rate_std": 7.670478265096468e-05,
+        "option_coefficient": 0.013411999999999999,
+        "residual_rate": 0.1949890345637438,
+        "residual_rate_std": 4.6022869590576204e-05,
+        "sample_count": 10
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.370043814528589,
+        "base_rate_std": 7.059470303417341e-05,
+        "option_coefficient": 0.0136954,
+        "residual_rate": 0.1779737112828467,
+        "residual_rate_std": 4.2356821820489e-05,
+        "sample_count": 10
+      }
+    }
+  },
+  "rent": {
+    "특판_오릭스": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.7327874329463657,
+        "base_rate_std": 0.22721170850378414,
+        "option_coefficient": 0.016631257142857146,
+        "residual_rate": 0.5841310160928722,
+        "residual_rate_std": 0.05453081004090819,
+        "sample_count": 70
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.5830473508907053,
+        "base_rate_std": 0.18831030168645915,
+        "option_coefficient": 0.014962688524590165,
+        "residual_rate": 0.4301029536793462,
+        "residual_rate_std": 0.0677917086071253,
+        "sample_count": 61
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.4948767837147499,
+        "base_rate_std": 0.12174725245744338,
+        "option_coefficient": 0.012943266666666665,
+        "residual_rate": 0.46184435786269007,
+        "residual_rate_std": 0.043829010884679616,
+        "sample_count": 30
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.507661505915634,
+        "base_rate_std": 0.10328107737544769,
+        "option_coefficient": 0.013521768115942027,
+        "residual_rate": 0.45724185787037175,
+        "residual_rate_std": 0.037181187855161155,
+        "sample_count": 69
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.5294791805780867,
+        "base_rate_std": 0.15893030775961345,
+        "option_coefficient": 0.014491191489361704,
+        "residual_rate": 0.2658499933225183,
+        "residual_rate_std": 0.07628654772461446,
+        "sample_count": 47
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.3267590808647494,
+        "base_rate_std": 0.09924502652705124,
+        "option_coefficient": 0.011760111111111112,
+        "residual_rate": 0.3631556411849204,
+        "residual_rate_std": 0.0476376127329846,
+        "sample_count": 72
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.446774378616857,
+        "base_rate_std": 0.1000353842011974,
+        "option_coefficient": 0.012793830508474578,
+        "residual_rate": 0.3055482982639086,
+        "residual_rate_std": 0.04801698441657474,
+        "sample_count": 59
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.3881378907198776,
+        "base_rate_std": 0.06696285579811694,
+        "option_coefficient": 0.01313577777777778,
+        "residual_rate": 0.16711726556807335,
+        "residual_rate_std": 0.04017771347887017,
+        "sample_count": 54
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.283492653610491,
+        "base_rate_std": 0.09513274402921046,
+        "option_coefficient": 0.011203927710843373,
+        "residual_rate": 0.2299044078337054,
+        "residual_rate_std": 0.05707964641752626,
+        "sample_count": 83
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.3986051080909077,
+        "base_rate_std": 0.089941441898515,
+        "option_coefficient": 0.012155814814814812,
+        "residual_rate": 0.1608369351454553,
+        "residual_rate_std": 0.053964865139108996,
+        "sample_count": 54
+      }
+    },
+    "특판_BNK": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.5863462030370983,
+        "base_rate_std": 0.2321315689845115,
+        "option_coefficient": 0.014788772845953,
+        "residual_rate": 0.6192769112710965,
+        "residual_rate_std": 0.05571157655628276,
+        "sample_count": 383
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.7524175939273645,
+        "base_rate_std": 0.27108711431574045,
+        "option_coefficient": 0.01616801556420233,
+        "residual_rate": 0.5794197774574324,
+        "residual_rate_std": 0.06506090743577772,
+        "sample_count": 257
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 1.8289155345261505,
+        "base_rate_std": 0.2856252721133612,
+        "option_coefficient": 0.016953047210300432,
+        "residual_rate": 0.5610602717137239,
+        "residual_rate_std": 0.06855006530720668,
+        "sample_count": 233
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.4506670947322922,
+        "base_rate_std": 0.20625320586841733,
+        "option_coefficient": 0.013004827586206897,
+        "residual_rate": 0.4777598458963749,
+        "residual_rate_std": 0.07425115411263025,
+        "sample_count": 174
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.5806704925364399,
+        "base_rate_std": 0.23867270729634807,
+        "option_coefficient": 0.014321981981981983,
+        "residual_rate": 0.43095862268688184,
+        "residual_rate_std": 0.08592217462668532,
+        "sample_count": 111
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.6707760932890574,
+        "base_rate_std": 0.24513234228683495,
+        "option_coefficient": 0.015048217054263565,
+        "residual_rate": 0.39852060641593934,
+        "residual_rate_std": 0.08824764322326058,
+        "sample_count": 129
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.3496304293920012,
+        "base_rate_std": 0.1558739326250263,
+        "option_coefficient": 0.011788148148148148,
+        "residual_rate": 0.35217739389183944,
+        "residual_rate_std": 0.07481948766001263,
+        "sample_count": 270
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.425267252257964,
+        "base_rate_std": 0.17482257957148628,
+        "option_coefficient": 0.012493140096618359,
+        "residual_rate": 0.31604190460241255,
+        "residual_rate_std": 0.08325888166754823,
+        "sample_count": 207
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.4889515948004994,
+        "base_rate_std": 0.16924016311175566,
+        "option_coefficient": 0.012974943396226414,
+        "residual_rate": 0.28630860940424907,
+        "residual_rate_std": 0.07738911995610392,
+        "sample_count": 265
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.3258088657819456,
+        "base_rate_std": 0.1670008896353423,
+        "option_coefficient": 0.011610232558139534,
+        "residual_rate": 0.21256974619594343,
+        "residual_rate_std": 0.07266846355227521,
+        "sample_count": 172
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.3740700795922671,
+        "base_rate_std": 0.19349101276716626,
+        "option_coefficient": 0.0122090756302521,
+        "residual_rate": 0.18938540856986869,
+        "residual_rate_std": 0.07470313631348312,
+        "sample_count": 119
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.449159097553966,
+        "base_rate_std": 0.18298861620574694,
+        "option_coefficient": 0.012590658682634731,
+        "residual_rate": 0.14358507866219788,
+        "residual_rate_std": 0.07528500970682768,
+        "sample_count": 167
+      }
+    },
+    "특판_우리카드H": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.9767736750669003,
+        "base_rate_std": 0.21663633872558588,
+        "option_coefficient": 0.01858506567164179,
+        "residual_rate": 0.5255743179839442,
+        "residual_rate_std": 0.05199272129414061,
+        "sample_count": 67
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 2.118911047311434,
+        "base_rate_std": 0.1981971184443836,
+        "option_coefficient": 0.019554313333333337,
+        "residual_rate": 0.4914613486452558,
+        "residual_rate_std": 0.047567308426652063,
+        "sample_count": 60
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.2215191364274474,
+        "base_rate_std": 0.19058352955873534,
+        "option_coefficient": 0.020494356249999998,
+        "residual_rate": 0.4668354072574127,
+        "residual_rate_std": 0.045740047094096487,
+        "sample_count": 64
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.7667734453613213,
+        "base_rate_std": 0.15030194161494131,
+        "option_coefficient": 0.016111463829787235,
+        "residual_rate": 0.3639615596699242,
+        "residual_rate_std": 0.05410869898137888,
+        "sample_count": 47
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.8564216605862454,
+        "base_rate_std": 0.15265368965408468,
+        "option_coefficient": 0.01679526315789473,
+        "residual_rate": 0.33168820218895156,
+        "residual_rate_std": 0.05495532827547049,
+        "sample_count": 38
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.9088451708466723,
+        "base_rate_std": 0.1438564243934837,
+        "option_coefficient": 0.01711395348837209,
+        "residual_rate": 0.312815738495198,
+        "residual_rate_std": 0.05178831278165413,
+        "sample_count": 43
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.6391708616516143,
+        "base_rate_std": 0.1472379172710803,
+        "option_coefficient": 0.015074088888888885,
+        "residual_rate": 0.21319798640722512,
+        "residual_rate_std": 0.0706742002901185,
+        "sample_count": 27
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.7153301928374647,
+        "base_rate_std": 0.15160960693330178,
+        "option_coefficient": 0.015515789473684214,
+        "residual_rate": 0.17664150743801704,
+        "residual_rate_std": 0.07277261132798486,
+        "sample_count": 19
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.774301795383421,
+        "base_rate_std": 0.12477676196757907,
+        "option_coefficient": 0.016035585185185188,
+        "residual_rate": 0.1483351382159579,
+        "residual_rate_std": 0.05989284574443796,
+        "sample_count": 27
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.5530885692147451,
+        "base_rate_std": 0.11456632547014423,
+        "option_coefficient": 0.013880000000000002,
+        "residual_rate": 0.0696498536380168,
+        "residual_rate_std": 0.06696061006987306,
+        "sample_count": 44
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.592823039114537,
+        "base_rate_std": 0.11735945435838346,
+        "option_coefficient": 0.01436768205128205,
+        "residual_rate": 0.04903657728596767,
+        "residual_rate_std": 0.06615770119677078,
+        "sample_count": 39
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.635514414714755,
+        "base_rate_std": 0.11530893763214926,
+        "option_coefficient": 0.01475294117647059,
+        "residual_rate": 0.031569214502519115,
+        "residual_rate_std": 0.06076839936106668,
+        "sample_count": 34
+      }
+    },
+    "특판_우리금융": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.6315664091598658,
+        "base_rate_std": 0.46712550103360323,
+        "option_coefficient": 0.01860655555555556,
+        "residual_rate": 0.6084240618016322,
+        "residual_rate_std": 0.11211012024806478,
+        "sample_count": 45
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.63441388162588,
+        "base_rate_std": 0.22248113421596247,
+        "option_coefficient": 0.01640075737704918,
+        "residual_rate": 0.6077406684097888,
+        "residual_rate_std": 0.053395472211831,
+        "sample_count": 183
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 1.7798859782995324,
+        "base_rate_std": 0.22117139594919685,
+        "option_coefficient": 0.01709175075376885,
+        "residual_rate": 0.5728273652081122,
+        "residual_rate_std": 0.05308113502780726,
+        "sample_count": 199
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.3962249859278966,
+        "base_rate_std": 0.3992883716022939,
+        "option_coefficient": 0.014067085714285716,
+        "residual_rate": 0.49735900506595726,
+        "residual_rate_std": 0.14374381377682577,
+        "sample_count": 28
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.5080204205729328,
+        "base_rate_std": 0.24841433571462068,
+        "option_coefficient": 0.013657878651685393,
+        "residual_rate": 0.4571126485937442,
+        "residual_rate_std": 0.08942916085726343,
+        "sample_count": 89
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.5968509547792755,
+        "base_rate_std": 0.24119970821115055,
+        "option_coefficient": 0.014324629999999998,
+        "residual_rate": 0.4251336562794609,
+        "residual_rate_std": 0.08683189495601419,
+        "sample_count": 100
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.3179493054551936,
+        "base_rate_std": 0.3893510374620368,
+        "option_coefficient": 0.01329306,
+        "residual_rate": 0.3677223607787673,
+        "residual_rate_std": 0.18621637743475555,
+        "sample_count": 20
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.4059868089851508,
+        "base_rate_std": 0.25064344575249436,
+        "option_coefficient": 0.012782188888888891,
+        "residual_rate": 0.3254188938383198,
+        "residual_rate_std": 0.11949591386220848,
+        "sample_count": 54
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.503338752071329,
+        "base_rate_std": 0.21433457743276543,
+        "option_coefficient": 0.015041567441860469,
+        "residual_rate": 0.2795002404965043,
+        "residual_rate_std": 0.09967405017347682,
+        "sample_count": 86
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.3334926481741913,
+        "base_rate_std": 0.20801048569536537,
+        "option_coefficient": 0.011803821874999999,
+        "residual_rate": 0.2098212786792577,
+        "residual_rate_std": 0.09961646384728896,
+        "sample_count": 64
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.3702564569821885,
+        "base_rate_std": 0.14609558839931822,
+        "option_coefficient": 0.012745460526315788,
+        "residual_rate": 0.18225279533847671,
+        "residual_rate_std": 0.07315821449387175,
+        "sample_count": 152
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.3983145117729796,
+        "base_rate_std": 0.13763674391004224,
+        "option_coefficient": 0.013172599999999998,
+        "residual_rate": 0.16517315281643513,
+        "residual_rate_std": 0.0682950713253656,
+        "sample_count": 190
+      }
+    },
+    "특판_케이카": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.8588668881074402,
+        "base_rate_std": 0.20544760015733618,
+        "option_coefficient": 0.01603955056179775,
+        "residual_rate": 0.5538719468542143,
+        "residual_rate_std": 0.049307424037760686,
+        "sample_count": 89
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 2.0753174067837086,
+        "base_rate_std": 0.2231359735851619,
+        "option_coefficient": 0.017776521739130437,
+        "residual_rate": 0.50192382237191,
+        "residual_rate_std": 0.053552633660438866,
+        "sample_count": 46
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.166913513877105,
+        "base_rate_std": 0.2128714723202751,
+        "option_coefficient": 0.0188762962962963,
+        "residual_rate": 0.4799407566694948,
+        "residual_rate_std": 0.051089153356866014,
+        "sample_count": 27
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.6720276404489216,
+        "base_rate_std": 0.17110941327738227,
+        "option_coefficient": 0.013959016393442625,
+        "residual_rate": 0.3980700494383882,
+        "residual_rate_std": 0.06159938877985763,
+        "sample_count": 61
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.8435145326987923,
+        "base_rate_std": 0.15834768074449684,
+        "option_coefficient": 0.01535777777777778,
+        "residual_rate": 0.3363347682284347,
+        "residual_rate_std": 0.05700516506801886,
+        "sample_count": 45
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 2.001686740192302,
+        "base_rate_std": 0.1252223320304625,
+        "option_coefficient": 0.016746666666666667,
+        "residual_rate": 0.27939277353077113,
+        "residual_rate_std": 0.04508003953096649,
+        "sample_count": 24
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.5928663716119595,
+        "base_rate_std": 0.1427348151479671,
+        "option_coefficient": 0.013189333333333336,
+        "residual_rate": 0.2354241416262594,
+        "residual_rate_std": 0.06851271127102421,
+        "sample_count": 60
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.7149780876296492,
+        "base_rate_std": 0.13790600370710623,
+        "option_coefficient": 0.01412095238095238,
+        "residual_rate": 0.17681051793776842,
+        "residual_rate_std": 0.06619488177941099,
+        "sample_count": 42
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.8457465777968705,
+        "base_rate_std": 0.09756665179881824,
+        "option_coefficient": 0.0152,
+        "residual_rate": 0.11404164265750223,
+        "residual_rate_std": 0.04683199286343276,
+        "sample_count": 21
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.5907955573405612,
+        "base_rate_std": 0.12278228326592887,
+        "option_coefficient": 0.012985116279069763,
+        "residual_rate": 0.05655897590918628,
+        "residual_rate_std": 0.06026950237220763,
+        "sample_count": 43
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.7211485878231525,
+        "base_rate_std": 0.08466245154840171,
+        "option_coefficient": 0.014053333333333334,
+        "residual_rate": 0.004901587492697905,
+        "residual_rate_std": 0.007332032733587194,
+        "sample_count": 12
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.7461554792089085,
+        "base_rate_std": 0.036158179218122775,
+        "option_coefficient": 0.014695,
+        "residual_rate": 0.0,
+        "residual_rate_std": 0.0,
+        "sample_count": 8
+      }
+    },
+    "특판_JB우리": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 2.1221096509748105,
+        "base_rate_std": 0.5481342553756388,
+        "option_coefficient": 0.020331688311688308,
+        "residual_rate": 0.4906936837660455,
+        "residual_rate_std": 0.13155222129015332,
+        "sample_count": 231
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 2.1043279495461946,
+        "base_rate_std": 0.5545873512939921,
+        "option_coefficient": 0.02007338289962825,
+        "residual_rate": 0.49496129210891326,
+        "residual_rate_std": 0.1331009643105581,
+        "sample_count": 269
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.69293959285392,
+        "base_rate_std": 0.2299431846427548,
+        "option_coefficient": 0.0263902752293578,
+        "residual_rate": 0.353694497715059,
+        "residual_rate_std": 0.055186364314261147,
+        "sample_count": 109
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.7801590895380923,
+        "base_rate_std": 0.44876327989510734,
+        "option_coefficient": 0.0169310447761194,
+        "residual_rate": 0.3591427277662867,
+        "residual_rate_std": 0.16155478076223867,
+        "sample_count": 134
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.7283961629845812,
+        "base_rate_std": 0.43515240450148235,
+        "option_coefficient": 0.01623540540540541,
+        "residual_rate": 0.3777773813255508,
+        "residual_rate_std": 0.15665486562053366,
+        "sample_count": 148
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 2.2649650177314826,
+        "base_rate_std": 0.15051639460723962,
+        "option_coefficient": 0.02209290909090909,
+        "residual_rate": 0.18461259361666627,
+        "residual_rate_std": 0.05418590205860626,
+        "sample_count": 110
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.7375284605546528,
+        "base_rate_std": 0.3074292248306358,
+        "option_coefficient": 0.016539009900990095,
+        "residual_rate": 0.16601075795597975,
+        "residual_rate_std": 0.14753835205148255,
+        "sample_count": 101
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.8513294337897284,
+        "base_rate_std": 0.25346212162225346,
+        "option_coefficient": 0.01781350649350649,
+        "residual_rate": 0.11206883447141183,
+        "residual_rate_std": 0.1209625410055601,
+        "sample_count": 77
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.986784102109755,
+        "base_rate_std": 0.11514122848785784,
+        "option_coefficient": 0.019303925233644863,
+        "residual_rate": 0.05104085503891815,
+        "residual_rate_std": 0.049318008407404454,
+        "sample_count": 107
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.7212244300139137,
+        "base_rate_std": 0.15641031292918234,
+        "option_coefficient": 0.016550217391304346,
+        "residual_rate": 0.02404757707383434,
+        "residual_rate_std": 0.06367157907920207,
+        "sample_count": 92
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.8086661748226645,
+        "base_rate_std": 0.07316883324969219,
+        "option_coefficient": 0.01757818181818182,
+        "residual_rate": 0.00041907699331930024,
+        "residual_rate_std": 0.0017464960211359074,
+        "sample_count": 66
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.834792462901485,
+        "base_rate_std": 0.08803755593018923,
+        "option_coefficient": 0.017715275590551176,
+        "residual_rate": 0.00032079395426173424,
+        "residual_rate_std": 0.0015914033003006601,
+        "sample_count": 127
+      }
+    },
+    "특판_농협": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.5531887202676848,
+        "base_rate_std": 0.057219467414237765,
+        "option_coefficient": 0.013933333333333332,
+        "residual_rate": 0.6272347071357557,
+        "residual_rate_std": 0.013732672179417068,
+        "sample_count": 12
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.616748319782248,
+        "base_rate_std": 0.050652909758309446,
+        "option_coefficient": 0.014079999999999999,
+        "residual_rate": 0.6119804032522606,
+        "residual_rate_std": 0.012156698341994256,
+        "sample_count": 5
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 1.7580509418342658,
+        "base_rate_std": 0.18041382696444708,
+        "option_coefficient": 0.015973684210526317,
+        "residual_rate": 0.5780677739597762,
+        "residual_rate_std": 0.043299318471467306,
+        "sample_count": 76
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.3490692765304164,
+        "base_rate_std": 0.0,
+        "option_coefficient": 0.0116,
+        "residual_rate": 0.5143350604490501,
+        "residual_rate_std": 0.0,
+        "sample_count": 1
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.474308425000823,
+        "base_rate_std": 0.015327996965896203,
+        "option_coefficient": 0.013171428571428572,
+        "residual_rate": 0.4692489669997037,
+        "residual_rate_std": 0.0055180789077226245,
+        "sample_count": 7
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.308479221455443,
+        "base_rate_std": 0.007221849473829487,
+        "option_coefficient": 0.011714285714285714,
+        "residual_rate": 0.3719299737013873,
+        "residual_rate_std": 0.0034664877474381603,
+        "sample_count": 7
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.4382332093887027,
+        "base_rate_std": 0.06633559512190025,
+        "option_coefficient": 0.01235,
+        "residual_rate": 0.3096480594934228,
+        "residual_rate_std": 0.0318410856585121,
+        "sample_count": 4
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.3192621090763141,
+        "base_rate_std": 0.07577009107789391,
+        "option_coefficient": 0.011338461538461539,
+        "residual_rate": 0.20844273455421133,
+        "residual_rate_std": 0.04546205464673632,
+        "sample_count": 13
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.4081283211330244,
+        "base_rate_std": 0.06126715095126159,
+        "option_coefficient": 0.011933333333333332,
+        "residual_rate": 0.15512300732018527,
+        "residual_rate_std": 0.03676029057075699,
+        "sample_count": 3
+      }
+    },
+    "특판_신한카드": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 2.4879757645256304,
+        "base_rate_std": 0.416729946457624,
+        "option_coefficient": 0.023987512195121952,
+        "residual_rate": 0.4028858165138486,
+        "residual_rate_std": 0.10001518714982975,
+        "sample_count": 287
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 2.539822221881977,
+        "base_rate_std": 0.43373945315386314,
+        "option_coefficient": 0.02449996587030717,
+        "residual_rate": 0.3904426667483255,
+        "residual_rate_std": 0.10409746875692717,
+        "sample_count": 293
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.565845510609127,
+        "base_rate_std": 0.43301606282643235,
+        "option_coefficient": 0.02465345023696683,
+        "residual_rate": 0.3841970774538095,
+        "residual_rate_std": 0.10392385507834376,
+        "sample_count": 422
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.7126787436227597,
+        "base_rate_std": 0.3402003663100404,
+        "option_coefficient": 0.015544410256410256,
+        "residual_rate": 0.3834356522958065,
+        "residual_rate_std": 0.12247213187161454,
+        "sample_count": 39
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.7206309785136578,
+        "base_rate_std": 0.25337222669759735,
+        "option_coefficient": 0.01566664,
+        "residual_rate": 0.38057284773508326,
+        "residual_rate_std": 0.09121400161113503,
+        "sample_count": 25
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 2.2644464348223443,
+        "base_rate_std": 0.22972477845741818,
+        "option_coefficient": 0.021757999999999996,
+        "residual_rate": 0.1847992834639562,
+        "residual_rate_std": 0.08270092024467054,
+        "sample_count": 306
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.5353320903715217,
+        "base_rate_std": 0.24975992910358127,
+        "option_coefficient": 0.013866285714285713,
+        "residual_rate": 0.2643643412117188,
+        "residual_rate_std": 0.11682286717156397,
+        "sample_count": 49
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.536879744013464,
+        "base_rate_std": 0.15727498651071825,
+        "option_coefficient": 0.013729419354838712,
+        "residual_rate": 0.2632361720864208,
+        "residual_rate_std": 0.07196216312515581,
+        "sample_count": 31
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.9515357073865445,
+        "base_rate_std": 0.21571563882724704,
+        "option_coefficient": 0.018555939759036143,
+        "residual_rate": 0.07394613776915339,
+        "residual_rate_std": 0.09276254268510288,
+        "sample_count": 332
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.5658012900849643,
+        "base_rate_std": 0.22405067087125816,
+        "option_coefficient": 0.014203081081081082,
+        "residual_rate": 0.10024424263300265,
+        "residual_rate_std": 0.0715335577524682,
+        "sample_count": 37
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.5864476435452886,
+        "base_rate_std": 0.14356021686643342,
+        "option_coefficient": 0.0136468275862069,
+        "residual_rate": 0.06510556148955839,
+        "residual_rate_std": 0.06200003457781583,
+        "sample_count": 29
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.8515263407656215,
+        "base_rate_std": 0.14361437354741605,
+        "option_coefficient": 0.0176065,
+        "residual_rate": 0.008194960442931568,
+        "residual_rate_std": 0.030931883593700683,
+        "sample_count": 264
+      }
+    },
+    "특판_메리츠": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.8824376615119225,
+        "base_rate_std": 0.13592850303037196,
+        "option_coefficient": 0.016126,
+        "residual_rate": 0.5482149612371386,
+        "residual_rate_std": 0.03262284072728927,
+        "sample_count": 2
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.8253517387841782,
+        "base_rate_std": 0.0,
+        "option_coefficient": 0.016148,
+        "residual_rate": 0.5619155826917972,
+        "residual_rate_std": 0.0,
+        "sample_count": 1
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.134749034749035,
+        "base_rate_std": 0.0,
+        "option_coefficient": 0.017666,
+        "residual_rate": 0.48766023166023165,
+        "residual_rate_std": 0.0,
+        "sample_count": 1
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.544863352834037,
+        "base_rate_std": 0.1508703589413549,
+        "option_coefficient": 0.014322,
+        "residual_rate": 0.4438491929797466,
+        "residual_rate_std": 0.054313329218887756,
+        "sample_count": 45
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.6113995836863453,
+        "base_rate_std": 0.16162876947408314,
+        "option_coefficient": 0.01543589473684211,
+        "residual_rate": 0.4198961498729156,
+        "residual_rate_std": 0.05818635701066992,
+        "sample_count": 38
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.6709961007612808,
+        "base_rate_std": 0.1720903421163283,
+        "option_coefficient": 0.01602528888888889,
+        "residual_rate": 0.39844140372593895,
+        "residual_rate_std": 0.061952523161878166,
+        "sample_count": 45
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.4245385065980463,
+        "base_rate_std": 0.1211357233408597,
+        "option_coefficient": 0.013100153846153843,
+        "residual_rate": 0.3162215168329378,
+        "residual_rate_std": 0.05814514720361264,
+        "sample_count": 39
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.4495018629828675,
+        "base_rate_std": 0.123601087794958,
+        "option_coefficient": 0.013453611111111112,
+        "residual_rate": 0.30423910576822355,
+        "residual_rate_std": 0.05932852214157983,
+        "sample_count": 36
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.6073041710510239,
+        "base_rate_std": 0.12377362838664936,
+        "option_coefficient": 0.015462333333333335,
+        "residual_rate": 0.22849399789550864,
+        "residual_rate_std": 0.059411341625591696,
+        "sample_count": 12
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.3333660676088477,
+        "base_rate_std": 0.13322776462255417,
+        "option_coefficient": 0.012088999999999997,
+        "residual_rate": 0.19998035943469153,
+        "residual_rate_std": 0.0799366587735325,
+        "sample_count": 46
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.3621995758663266,
+        "base_rate_std": 0.1687257557299525,
+        "option_coefficient": 0.012412,
+        "residual_rate": 0.18268025448020417,
+        "residual_rate_std": 0.10123545343797152,
+        "sample_count": 22
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.6255886120435001,
+        "base_rate_std": 0.15795481739973813,
+        "option_coefficient": 0.015664,
+        "residual_rate": 0.05606630706453073,
+        "residual_rate_std": 0.06866786520604816,
+        "sample_count": 5
+      }
+    },
+    "특판_삼성카드": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 1.6486271361752147,
+        "base_rate_std": 0.15123704235739754,
+        "option_coefficient": 0.02283111111111111,
+        "residual_rate": 0.6043294873179484,
+        "residual_rate_std": 0.03629689016577541,
+        "sample_count": 9
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 1.7654802939205463,
+        "base_rate_std": 0.1563875193738443,
+        "option_coefficient": 0.0220275,
+        "residual_rate": 0.576284729459069,
+        "residual_rate_std": 0.03753300464972262,
+        "sample_count": 16
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 1.8769673774332107,
+        "base_rate_std": 0.30096387740044456,
+        "option_coefficient": 0.022619069767441862,
+        "residual_rate": 0.5495278294160294,
+        "residual_rate_std": 0.0722313305761067,
+        "sample_count": 43
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.6517895003883087,
+        "base_rate_std": 0.04408086463258149,
+        "option_coefficient": 0.020166666666666666,
+        "residual_rate": 0.4053557798602088,
+        "residual_rate_std": 0.015869111267729358,
+        "sample_count": 3
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.6709090937388498,
+        "base_rate_std": 0.03245638541791087,
+        "option_coefficient": 0.019873333333333333,
+        "residual_rate": 0.39847272625401414,
+        "residual_rate_std": 0.011684298750447913,
+        "sample_count": 6
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.6987763485887537,
+        "base_rate_std": 0.1410641499420217,
+        "option_coefficient": 0.019341666666666663,
+        "residual_rate": 0.38844051450804873,
+        "residual_rate_std": 0.050783093979127815,
+        "sample_count": 12
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.547269477894873,
+        "base_rate_std": 0.00837361842184936,
+        "option_coefficient": 0.01815,
+        "residual_rate": 0.2573106506104609,
+        "residual_rate_std": 0.004019336842487675,
+        "sample_count": 2
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.5430840185987178,
+        "base_rate_std": 0.021629018203128424,
+        "option_coefficient": 0.0176,
+        "residual_rate": 0.2593196710726154,
+        "residual_rate_std": 0.01038192873750164,
+        "sample_count": 6
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.526826813289674,
+        "base_rate_std": 0.0604473647136851,
+        "option_coefficient": 0.01782,
+        "residual_rate": 0.2671231296209565,
+        "residual_rate_std": 0.029014735062568835,
+        "sample_count": 8
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.4714653845624723,
+        "base_rate_std": 0.006178893554525944,
+        "option_coefficient": 0.01672,
+        "residual_rate": 0.11712076926251658,
+        "residual_rate_std": 0.0037073361327155663,
+        "sample_count": 2
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.4837160179904503,
+        "base_rate_std": 0.006928063159835407,
+        "option_coefficient": 0.01694,
+        "residual_rate": 0.1097703892057299,
+        "residual_rate_std": 0.004156837895901266,
+        "sample_count": 2
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.5175523805674103,
+        "base_rate_std": 0.08104712111255671,
+        "option_coefficient": 0.01643714285714286,
+        "residual_rate": 0.09347511295145909,
+        "residual_rate_std": 0.038979108048729755,
+        "sample_count": 7
+      }
+    },
+    "특판_하나": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 2.4518962944586282,
+        "base_rate_std": 0.1827776238016093,
+        "option_coefficient": 0.023317051546391757,
+        "residual_rate": 0.4115448893299291,
+        "residual_rate_std": 0.04386662971238624,
+        "sample_count": 97
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 2.3122975230755847,
+        "base_rate_std": 0.255595975222569,
+        "option_coefficient": 0.021899098765432095,
+        "residual_rate": 0.4450485944618596,
+        "residual_rate_std": 0.06134303405341657,
+        "sample_count": 162
+      },
+      "24_3만km": {
+        "period": 24,
+        "mileage": "3만km",
+        "base_rate": 2.4435345490019276,
+        "base_rate_std": 0.30043041819823213,
+        "option_coefficient": 0.02313281355932204,
+        "residual_rate": 0.4135517082395376,
+        "residual_rate_std": 0.07210330036757572,
+        "sample_count": 118
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 2.076993774278792,
+        "base_rate_std": 0.13902149043321266,
+        "option_coefficient": 0.01944756,
+        "residual_rate": 0.25228224125963494,
+        "residual_rate_std": 0.05004773655595654,
+        "sample_count": 50
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.8840318547498769,
+        "base_rate_std": 0.24789128842623345,
+        "option_coefficient": 0.018111339805825244,
+        "residual_rate": 0.32174853229004435,
+        "residual_rate_std": 0.08924086383344404,
+        "sample_count": 103
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 2.0815717265261515,
+        "base_rate_std": 0.20649750193766667,
+        "option_coefficient": 0.019798686567164176,
+        "residual_rate": 0.2506341784505854,
+        "residual_rate_std": 0.07433910069756,
+        "sample_count": 134
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.8493971987806725,
+        "base_rate_std": 0.09900248910264865,
+        "option_coefficient": 0.017162869565217394,
+        "residual_rate": 0.11228934458527724,
+        "residual_rate_std": 0.047521194769271365,
+        "sample_count": 69
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.7082786134159909,
+        "base_rate_std": 0.19430034524155415,
+        "option_coefficient": 0.016144734375,
+        "residual_rate": 0.18002626556032425,
+        "residual_rate_std": 0.093264165715946,
+        "sample_count": 128
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.8636079357447255,
+        "base_rate_std": 0.15812788326397376,
+        "option_coefficient": 0.017494557142857144,
+        "residual_rate": 0.10751210928791957,
+        "residual_rate_std": 0.07221388502931948,
+        "sample_count": 140
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.7092564229220233,
+        "base_rate_std": 0.08339434177973454,
+        "option_coefficient": 0.015771280898876402,
+        "residual_rate": 0.009081619542697665,
+        "residual_rate_std": 0.015425004872708403,
+        "sample_count": 89
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.5724544820983342,
+        "base_rate_std": 0.19564831235123423,
+        "option_coefficient": 0.014790678571428573,
+        "residual_rate": 0.0762315186851377,
+        "residual_rate_std": 0.09776146276314733,
+        "sample_count": 168
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.7690408934969304,
+        "base_rate_std": 0.10454121722176324,
+        "option_coefficient": 0.01635574045801527,
+        "residual_rate": 0.004657979651087509,
+        "residual_rate_std": 0.01536066639526038,
+        "sample_count": 131
+      }
+    },
+    "특판_신한H": {
+      "24_1만km": {
+        "period": 24,
+        "mileage": "1만km",
+        "base_rate": 4.949111523967274,
+        "base_rate_std": 0.05674515834273097,
+        "option_coefficient": 0.048729063829787214,
+        "residual_rate": 0.0,
+        "residual_rate_std": 0.0,
+        "sample_count": 47
+      },
+      "24_2만km": {
+        "period": 24,
+        "mileage": "2만km",
+        "base_rate": 4.949111523967274,
+        "base_rate_std": 0.05674515834273097,
+        "option_coefficient": 0.048729063829787214,
+        "residual_rate": 0.0,
+        "residual_rate_std": 0.0,
+        "sample_count": 47
+      },
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 2.1190712663286044,
+        "base_rate_std": 0.5481142165853785,
+        "option_coefficient": 0.02071255581947743,
+        "residual_rate": 0.2642754041767959,
+        "residual_rate_std": 0.135602821690422,
+        "sample_count": 421
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 2.093136658226468,
+        "base_rate_std": 0.5429851931702544,
+        "option_coefficient": 0.020486,
+        "residual_rate": 0.27165901385333757,
+        "residual_rate_std": 0.13686610343558242,
+        "sample_count": 473
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.4579967245491736,
+        "base_rate_std": 0.15772919037294014,
+        "option_coefficient": 0.01676529411764706,
+        "residual_rate": 0.47512117916229746,
+        "residual_rate_std": 0.05678250853425845,
+        "sample_count": 51
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.866422750436285,
+        "base_rate_std": 0.3864936348032499,
+        "option_coefficient": 0.018190802955665025,
+        "residual_rate": 0.1402751902987844,
+        "residual_rate_std": 0.11862173287790656,
+        "sample_count": 406
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.8635844679000826,
+        "base_rate_std": 0.37880988099650953,
+        "option_coefficient": 0.018138329571106095,
+        "residual_rate": 0.14014086737172443,
+        "residual_rate_std": 0.11649856474991073,
+        "sample_count": 443
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.3587402300530254,
+        "base_rate_std": 0.12170487366615292,
+        "option_coefficient": 0.015144530612244899,
+        "residual_rate": 0.34780468957454785,
+        "residual_rate_std": 0.05841833935975339,
+        "sample_count": 49
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.7746602664696591,
+        "base_rate_std": 0.2667506053903401,
+        "option_coefficient": 0.017150144508670518,
+        "residual_rate": 0.02356522663306621,
+        "residual_rate_std": 0.06880456833537275,
+        "sample_count": 346
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.773745512854288,
+        "base_rate_std": 0.2606392653194165,
+        "option_coefficient": 0.01714934736842105,
+        "residual_rate": 0.02338540517949796,
+        "residual_rate_std": 0.06489615020810731,
+        "sample_count": 380
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.2997977274557644,
+        "base_rate_std": 0.1058469869877199,
+        "option_coefficient": 0.014755172413793104,
+        "residual_rate": 0.2201213635265413,
+        "residual_rate_std": 0.06350819219263192,
+        "sample_count": 29
+      }
+    },
+    "특판_iM": {
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.4595334502904624,
+        "base_rate_std": 0.13020246345521982,
+        "option_coefficient": 0.013288,
+        "residual_rate": 0.4745679578954333,
+        "residual_rate_std": 0.046872886843879136,
+        "sample_count": 53
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.5563098167686364,
+        "base_rate_std": 0.18733747759596556,
+        "option_coefficient": 0.013955542857142856,
+        "residual_rate": 0.4397284659632908,
+        "residual_rate_std": 0.06744149193454761,
+        "sample_count": 70
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.6060188835105016,
+        "base_rate_std": 0.16533650016025944,
+        "option_coefficient": 0.014330338709677419,
+        "residual_rate": 0.42183320193621937,
+        "residual_rate_std": 0.05952114005769341,
+        "sample_count": 124
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.3479545031675462,
+        "base_rate_std": 0.13009736890534465,
+        "option_coefficient": 0.012236950000000002,
+        "residual_rate": 0.35298183847957787,
+        "residual_rate_std": 0.0624467370745654,
+        "sample_count": 40
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.4914747338185659,
+        "base_rate_std": 0.2317176979319258,
+        "option_coefficient": 0.0132121,
+        "residual_rate": 0.28409212776708836,
+        "residual_rate_std": 0.11122449500732438,
+        "sample_count": 40
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.4522560513777216,
+        "base_rate_std": 0.1529731573750688,
+        "option_coefficient": 0.01282316129032258,
+        "residual_rate": 0.3029551654724362,
+        "residual_rate_std": 0.07326865592447529,
+        "sample_count": 124
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.3032950844736755,
+        "base_rate_std": 0.12811360237182345,
+        "option_coefficient": 0.011287654135338346,
+        "residual_rate": 0.22112387786821303,
+        "residual_rate_std": 0.06547665060003001,
+        "sample_count": 133
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.3657367881659874,
+        "base_rate_std": 0.1432094073510521,
+        "option_coefficient": 0.011725810344827588,
+        "residual_rate": 0.18726375136121057,
+        "residual_rate_std": 0.06537259407272486,
+        "sample_count": 116
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.4165481564161235,
+        "base_rate_std": 0.14006285563756463,
+        "option_coefficient": 0.012354327586206897,
+        "residual_rate": 0.1567020381910161,
+        "residual_rate_std": 0.06498339324129805,
+        "sample_count": 232
+      }
+    },
+    "특판_롯데": {
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.416192750242197,
+        "base_rate_std": 0.1511039627954854,
+        "option_coefficient": 0.012118716417910446,
+        "residual_rate": 0.4901706099128093,
+        "residual_rate_std": 0.05439742660637474,
+        "sample_count": 201
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.5155140637191595,
+        "base_rate_std": 0.17302778502099442,
+        "option_coefficient": 0.01285843795620438,
+        "residual_rate": 0.4544149370611026,
+        "residual_rate_std": 0.062290002607557994,
+        "sample_count": 137
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.7023342394802978,
+        "base_rate_std": 0.22330253020339433,
+        "option_coefficient": 0.0156110625,
+        "residual_rate": 0.3871596737870928,
+        "residual_rate_std": 0.08038891087322195,
+        "sample_count": 32
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.3756904757723076,
+        "base_rate_std": 0.13984879462853236,
+        "option_coefficient": 0.011470074468085104,
+        "residual_rate": 0.33966857162929226,
+        "residual_rate_std": 0.06712742142169553,
+        "sample_count": 188
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.4511603719380817,
+        "base_rate_std": 0.15224919062572406,
+        "option_coefficient": 0.012180142857142856,
+        "residual_rate": 0.30344302146972085,
+        "residual_rate_std": 0.07307961150034754,
+        "sample_count": 140
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.5800964586069173,
+        "base_rate_std": 0.16708707819212232,
+        "option_coefficient": 0.013882478260869562,
+        "residual_rate": 0.24155369986867972,
+        "residual_rate_std": 0.08020179753221872,
+        "sample_count": 46
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.3222713631189298,
+        "base_rate_std": 0.10527966036457344,
+        "option_coefficient": 0.01103723076923077,
+        "residual_rate": 0.20663718212864196,
+        "residual_rate_std": 0.06316779621874408,
+        "sample_count": 195
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.4117212297107342,
+        "base_rate_std": 0.12427517480898215,
+        "option_coefficient": 0.011634000000000004,
+        "residual_rate": 0.15396835994016772,
+        "residual_rate_std": 0.07221303772404565,
+        "sample_count": 110
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.495900676766372,
+        "base_rate_std": 0.13526813188177964,
+        "option_coefficient": 0.01277019512195122,
+        "residual_rate": 0.10507934466922808,
+        "residual_rate_std": 0.07703724676401966,
+        "sample_count": 41
+      }
+    },
+    "특판_MG": {
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.3605840738229857,
+        "base_rate_std": 0.010232399445256439,
+        "option_coefficient": 0.01188,
+        "residual_rate": 0.5101897334237252,
+        "residual_rate_std": 0.0036836638002923482,
+        "sample_count": 4
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.4428839564971243,
+        "base_rate_std": 0.04994570013839307,
+        "option_coefficient": 0.012386846153846156,
+        "residual_rate": 0.4805617756610354,
+        "residual_rate_std": 0.0179804520498215,
+        "sample_count": 26
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.5315048591188576,
+        "base_rate_std": 0.055008044917949736,
+        "option_coefficient": 0.013045365384615383,
+        "residual_rate": 0.4486582507172114,
+        "residual_rate_std": 0.019802896170461902,
+        "sample_count": 104
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.2258603157490309,
+        "base_rate_std": 0.010438998092773965,
+        "option_coefficient": 0.010538,
+        "residual_rate": 0.41158704844046523,
+        "residual_rate_std": 0.005010719084531509,
+        "sample_count": 8
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.3427217154759599,
+        "base_rate_std": 0.06136243782475141,
+        "option_coefficient": 0.01143097435897436,
+        "residual_rate": 0.3554935765715393,
+        "residual_rate_std": 0.02945397015588069,
+        "sample_count": 39
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.4129757790485076,
+        "base_rate_std": 0.037009654308778284,
+        "option_coefficient": 0.012346400000000002,
+        "residual_rate": 0.32177162605671644,
+        "residual_rate_std": 0.017764634068213558,
+        "sample_count": 10
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.2865294239065441,
+        "base_rate_std": 0.03333034470536254,
+        "option_coefficient": 0.011058666666666668,
+        "residual_rate": 0.2280823456560736,
+        "residual_rate_std": 0.019998206823217523,
+        "sample_count": 9
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.3148644015281328,
+        "base_rate_std": 0.0344100677837544,
+        "option_coefficient": 0.0111892,
+        "residual_rate": 0.21108135908312012,
+        "residual_rate_std": 0.020646040670252636,
+        "sample_count": 30
+      }
+    },
+    "특판_퍼시픽": {
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.6138454098124426,
+        "base_rate_std": 0.1339998857435427,
+        "option_coefficient": 0.018384,
+        "residual_rate": 0.41901565246752065,
+        "residual_rate_std": 0.04823995886767539,
+        "sample_count": 5
+      },
+      "36_2만km": {
+        "period": 36,
+        "mileage": "2만km",
+        "base_rate": 1.6580742730208733,
+        "base_rate_std": 0.15821205465542765,
+        "option_coefficient": 0.018333333333333333,
+        "residual_rate": 0.40309326171248566,
+        "residual_rate_std": 0.056956339675953954,
+        "sample_count": 3
+      },
+      "36_3만km": {
+        "period": 36,
+        "mileage": "3만km",
+        "base_rate": 1.6386600064603711,
+        "base_rate_std": 0.13422298960135312,
+        "option_coefficient": 0.018636000000000003,
+        "residual_rate": 0.41008239767426635,
+        "residual_rate_std": 0.04832027625648716,
+        "sample_count": 5
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.720756816917084,
+        "base_rate_std": 0.0,
+        "option_coefficient": 0.0164,
+        "residual_rate": 0.17403672787979962,
+        "residual_rate_std": 0.0,
+        "sample_count": 1
+      },
+      "48_2만km": {
+        "period": 48,
+        "mileage": "2만km",
+        "base_rate": 1.720756816917084,
+        "base_rate_std": 0.0,
+        "option_coefficient": 0.0164,
+        "residual_rate": 0.17403672787979962,
+        "residual_rate_std": 0.0,
+        "sample_count": 1
+      },
+      "48_3만km": {
+        "period": 48,
+        "mileage": "3만km",
+        "base_rate": 1.5693809293285486,
+        "base_rate_std": 0.0848802096575247,
+        "option_coefficient": 0.016816,
+        "residual_rate": 0.24669715392229669,
+        "residual_rate_std": 0.04074250063561187,
+        "sample_count": 5
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.615247634947134,
+        "base_rate_std": 0.0,
+        "option_coefficient": 0.01528,
+        "residual_rate": 0.030851419031719507,
+        "residual_rate_std": 0.0,
+        "sample_count": 1
+      },
+      "60_2만km": {
+        "period": 60,
+        "mileage": "2만km",
+        "base_rate": 1.615247634947134,
+        "base_rate_std": 0.0,
+        "option_coefficient": 0.01528,
+        "residual_rate": 0.030851419031719507,
+        "residual_rate_std": 0.0,
+        "sample_count": 1
+      },
+      "60_3만km": {
+        "period": 60,
+        "mileage": "3만km",
+        "base_rate": 1.5373400588995867,
+        "base_rate_std": 0.06508697455384732,
+        "option_coefficient": 0.015600000000000001,
+        "residual_rate": 0.07759596466024798,
+        "residual_rate_std": 0.03905218473230836,
+        "sample_count": 3
+      }
+    },
+    "특판_K2PLUS": {
+      "36_1만km": {
+        "period": 36,
+        "mileage": "1만km",
+        "base_rate": 1.9312238837259927,
+        "base_rate_std": 0.16755270105244396,
+        "option_coefficient": 0.01858923076923077,
+        "residual_rate": 0.30475940185864264,
+        "residual_rate_std": 0.060318972378879836,
+        "sample_count": 26
+      },
+      "48_1만km": {
+        "period": 48,
+        "mileage": "1만km",
+        "base_rate": 1.7125301567894387,
+        "base_rate_std": 0.15111438695444906,
+        "option_coefficient": 0.016403076923076923,
+        "residual_rate": 0.17798552474106938,
+        "residual_rate_std": 0.07253490573813556,
+        "sample_count": 26
+      },
+      "60_1만km": {
+        "period": 60,
+        "mileage": "1만km",
+        "base_rate": 1.5783664299080873,
+        "base_rate_std": 0.13744634448142806,
+        "option_coefficient": 0.015063846153846153,
+        "residual_rate": 0.0687681717440373,
+        "residual_rate_std": 0.05948854964149754,
+        "sample_count": 26
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "description": "Extracted from lease.xlsx and rent.xlsx",
+    "date": "2025-10-29"
+  }
+}
