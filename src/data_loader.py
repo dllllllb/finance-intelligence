@@ -26,8 +26,8 @@ class DataLoader:
     def load_all_data(_self):
         """모든 데이터 로드 (캐싱)"""
         _self.load_carinfo()
-        _self.load_lease_data()
-        _self.load_rent_data()
+        # lease.xlsx와 rent.xlsx는 model_params.json 추출 후 불필요
+        # 계산은 calculator.py의 model_params.json을 사용
         return True
 
     def load_carinfo(self):
