@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
 
 from data_loader import get_data_loader
 from calculator import get_calculator
+from bnk_calculator import get_bnk_calculator
 
 
 # 페이지 설정
@@ -102,6 +103,10 @@ def render_sidebar():
 
         if st.button("🧮 계산기", use_container_width=True, type="primary" if st.session_state.page == 'calculator' else "secondary"):
             st.session_state.page = 'calculator'
+            st.rerun()
+
+        if st.button("🏦 BNK 견적", use_container_width=True, type="primary" if st.session_state.page == 'bnk' else "secondary"):
+            st.session_state.page = 'bnk'
             st.rerun()
 
         if st.button("📊 모델 파라미터", use_container_width=True, type="primary" if st.session_state.page == 'params' else "secondary"):
@@ -601,6 +606,94 @@ def render_params_explanation():
     """)
 
 
+# ================ BNK 견적 페이지 ================
+
+def render_bnk_page():
+    """BNK 견적 페이지 - 엑셀과 동일한 로직"""
+    st.markdown('<div class="main-header">🏦 BNK 견적서</div>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align: center; color: #666;">BNK 엑셀 견적서와 동일한 계산 로직</p>', unsafe_allow_html=True)
+
+    bnk = get_bnk_calculator()
+
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        st.markdown("### 📝 견적 입력")
+
+        # 차량 정보
+        st.markdown("#### 차량 정보")
+        car_price = st.number_input("차량 가격 (원)", min_value=0, value=110000000, step=1000000)
+        option_price = st.number_input("옵션 가격 (원)", min_value=0, value=0, step=100000)
+        dealer_discount = st.number_input("딜러 할인 (원)", min_value=0, value=0, step=100000)
+
+        # 계약 조건
+        st.markdown("#### 계약 조건")
+        product_type = st.radio("상품 선택", ['리스', '렌트'])
+        period = st.selectbox("계약 기간", [12, 24, 36, 42, 44, 48, 60], index=2)
+
+        # 차량 유형
+        vehicle_type = st.selectbox("차량 유형", ['웨스트_통합', '웨스트_수입', '큐브_수입', '무카_국산'])
+
+        # 등급
+        if vehicle_type in ['큐브_수입', '무카_국산']:
+            grades = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q']
+        else:
+            grades = ['S', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
+        grade = st.selectbox("차량 등급", grades)
+
+        # 주행거리
+        mileage = st.select_slider("주행거리", ['1만', '1.5만', '2만', '3만'], value='2만')
+
+        # 보증금/선수금
+        st.markdown("#### 보증금/선수금")
+        deposit_type = st.radio("보증금 유형", ['무보증', '보증금', '선수금'])
+        if deposit_type != '무보증':
+            deposit_rate = st.slider("보증금/선수금 비율 (%)", 0, 30, 0, 10)
+        else:
+            deposit_rate = 0
+
+        # 계산 버튼
+        if st.button("💰 견적 계산", use_container_width=True, type="primary"):
+            if product_type == '리스':
+                monthly, debug = bnk.calculate_lease(
+                    car_price, option_price, period, vehicle_type, grade,
+                    mileage, deposit_type, deposit_rate, dealer_discount
+                )
+            else:
+                monthly, debug = bnk.calculate_rental(
+                    car_price, option_price, period, vehicle_type, grade,
+                    mileage, deposit_type, deposit_rate, dealer_discount
+                )
+
+            st.session_state.bnk_result = (monthly, debug)
+
+    with col2:
+        st.markdown("### 📊 견적 결과")
+
+        if 'bnk_result' in st.session_state:
+            monthly, debug = st.session_state.bnk_result
+
+            # 결과 표시
+            st.success(f"## 월 납입금: {monthly:,}원")
+
+            # 상세 정보
+            st.markdown("#### 📋 계산 상세")
+            with st.expander("계산 과정 보기", expanded=True):
+                for step in debug['steps']:
+                    st.text(step)
+
+            # 잔가 정보
+            if 'residual_value' in debug:
+                st.markdown("#### 🚗 잔가 정보")
+                st.info(f"""
+**잔가율**: {debug['residual_rate']*100:.2f}%
+**잔가금액**: {debug['residual_value']:,.0f}원
+**계약종료 시 차량 반환 후 잔가가 정산됩니다**
+                """)
+        else:
+            st.info("왼쪽에서 견적 조건을 입력하고 '견적 계산' 버튼을 눌러주세요.")
+
+
 # ================ 메인 ================
 
 def main():
@@ -611,6 +704,8 @@ def main():
     # 페이지 라우팅
     if st.session_state.page == 'calculator':
         render_calculator_page()
+    elif st.session_state.page == 'bnk':
+        render_bnk_page()
     elif st.session_state.page == 'params':
         render_params_page()
 
