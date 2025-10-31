@@ -53,6 +53,63 @@ class BNKCalculator:
 
         return acquisition_tax, registration_tax
 
+    def find_best_rv(
+        self,
+        period: int,
+        mileage: str = '2만'
+    ) -> Dict:
+        """
+        모든 잔가사에서 최고 잔가율 찾기
+
+        Args:
+            period: 계약기간 (12, 24, 36, 42, 44, 48, 60)
+            mileage: 주행거리 ('1만', '1.5만', '2만', '3만')
+
+        Returns:
+            {'company': 잔가사, 'grade': 등급, 'rate': 잔가율, 'all_rates': [(잔가사, 등급, 잔가율), ...]}
+        """
+        all_companies = ['웨스트_통합', '웨스트_수입', '큐브_수입', '무카_국산',
+                        '태양_수입', '조이_수입', '코렉트', 'ADB']
+
+        all_rates = []
+        best_rate = 0
+        best_company = None
+        best_grade = None
+
+        for company in all_companies:
+            table_key = f"{company}_{mileage}"
+            if table_key not in self.rv_tables:
+                table_key = f"{company}_2만"
+
+            if table_key not in self.rv_tables:
+                continue
+
+            period_data = self.rv_tables[table_key].get(str(period), {})
+
+            for grade, rate in period_data.items():
+                # 주행거리 조정
+                adjusted_rate = rate
+                if mileage != '2만' and mileage in self.rv_tables['주행거리_조정']:
+                    adjustment = self.rv_tables['주행거리_조정'][mileage]
+                    adjusted_rate += adjustment
+
+                all_rates.append((company, grade, adjusted_rate))
+
+                if adjusted_rate > best_rate:
+                    best_rate = adjusted_rate
+                    best_company = company
+                    best_grade = grade
+
+        # 정렬 (높은 순)
+        all_rates.sort(key=lambda x: x[2], reverse=True)
+
+        return {
+            'company': best_company,
+            'grade': best_grade,
+            'rate': best_rate,
+            'all_rates': all_rates[:10]  # 상위 10개만
+        }
+
     def get_residual_rate(
         self,
         rv_company: str,
@@ -96,7 +153,7 @@ class BNKCalculator:
         car_price: float,
         option_price: float,
         period: int,
-        rv_company: str = '웨스트_통합',
+        rv_company: str = '최고잔가',
         grade: str = 'A',
         mileage: str = '2만',
         deposit_type: str = '무보증',
@@ -112,7 +169,7 @@ class BNKCalculator:
             car_price: 차량 가격
             option_price: 옵션 가격
             period: 계약기간 (개월)
-            rv_company: 잔가사
+            rv_company: 잔가사 (또는 '최고잔가')
             grade: 차량 등급
             mileage: 주행거리
             deposit_type: '무보증', '보증금', '선수금'
@@ -124,6 +181,13 @@ class BNKCalculator:
         Returns:
             (월대여료, 상세정보)
         """
+        # 최고 잔가 자동 선택
+        best_rv_info = None
+        if rv_company == '최고잔가':
+            best_rv_info = self.find_best_rv(period, mileage)
+            rv_company = best_rv_info['company']
+            grade = best_rv_info['grade']
+
         debug = {
             'product': 'lease',
             'car_price': car_price,
@@ -137,6 +201,7 @@ class BNKCalculator:
             'dealer_discount': dealer_discount,
             'vehicle_type_eco': vehicle_type_eco,
             'is_domestic': is_domestic,
+            'best_rv_info': best_rv_info,
             'steps': []
         }
 
@@ -186,10 +251,20 @@ class BNKCalculator:
         residual_value = rv_base_amount * rv_rate
 
         debug['steps'].append(f"")
-        debug['steps'].append(f"=== 5. 잔가 정보 ===")
-        debug['steps'].append(f"잔가사: {rv_company}")
-        debug['steps'].append(f"등급: {grade}, 기간: {period}개월, 주행: {mileage}KM")
-        debug['steps'].append(f"잔가율: {rv_rate*100:.2f}%")
+        debug['steps'].append(f"=== 5. 잔가 정보 (최고잔가 적용) ===")
+        if best_rv_info:
+            debug['steps'].append(f"✨ 최고 잔가사: {rv_company} (등급: {grade})")
+            debug['steps'].append(f"✨ 최고 잔가율: {rv_rate*100:.2f}%")
+            debug['steps'].append(f"")
+            debug['steps'].append(f"📊 상위 5개 잔가율:")
+            for i, (company, grd, rate) in enumerate(best_rv_info['all_rates'][:5], 1):
+                marker = "👉" if company == rv_company and grd == grade else "  "
+                debug['steps'].append(f"{marker} {i}. {company} {grd}등급: {rate*100:.2f}%")
+        else:
+            debug['steps'].append(f"잔가사: {rv_company}")
+            debug['steps'].append(f"등급: {grade}, 기간: {period}개월, 주행: {mileage}KM")
+            debug['steps'].append(f"잔가율: {rv_rate*100:.2f}%")
+        debug['steps'].append(f"")
         debug['steps'].append(f"잔가금액: {rv_base_amount:,.0f} × {rv_rate:.4f} = {residual_value:,.0f}원")
 
         # 6. 감가상각액 및 월감가
@@ -268,7 +343,7 @@ class BNKCalculator:
         car_price: float,
         option_price: float,
         period: int,
-        rv_company: str = '웨스트_통합',
+        rv_company: str = '최고잔가',
         grade: str = 'A',
         mileage: str = '2만',
         deposit_type: str = '무보증',
