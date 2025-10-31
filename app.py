@@ -614,6 +614,7 @@ def render_bnk_page():
     st.markdown('<p style="text-align: center; color: #666;">BNK 엑셀 견적서와 동일한 계산 로직</p>', unsafe_allow_html=True)
 
     bnk = get_bnk_calculator()
+    data_loader = get_data_loader(data_dir="ref")
 
     col1, col2 = st.columns([1, 1])
 
@@ -621,8 +622,45 @@ def render_bnk_page():
         st.markdown("### 📝 견적 입력")
 
         # 차량 정보
-        st.markdown("#### 차량 정보")
-        car_price = st.number_input("차량 가격 (원)", min_value=0, value=110000000, step=1000000)
+        st.markdown("#### 차량 선택")
+
+        # 차량 선택 방식
+        selection_mode = st.radio("차량 입력 방식", ["차량 선택", "직접 입력"], horizontal=True)
+
+        if selection_mode == "차량 선택":
+            # 엑셀처럼 차량 선택
+            brands = data_loader.get_brands()
+            selected_brand = st.selectbox("제조사", ["선택하세요"] + brands)
+
+            car_price = 0
+            selected_car_info = None
+
+            if selected_brand and selected_brand != "선택하세요":
+                models = data_loader.get_models(selected_brand)
+                selected_model = st.selectbox("모델명", ["선택하세요"] + models)
+
+                if selected_model and selected_model != "선택하세요":
+                    grades = data_loader.get_grades(selected_brand, selected_model)
+
+                    # 등급 표시 (가격 포함)
+                    grade_options = ["선택하세요"] + [f"{g['grade']} - {g['price']:,.0f}원" for g in grades]
+                    selected_grade = st.selectbox("세부모델 (등급)", grade_options)
+
+                    if selected_grade and selected_grade != "선택하세요":
+                        # 선택된 차량 정보 가져오기
+                        grade_idx = grade_options.index(selected_grade) - 1
+                        selected_car_info = grades[grade_idx]
+                        car_price = selected_car_info['price']
+
+                        st.success(f"✅ 선택된 차량: {selected_brand} {selected_model} {selected_car_info['grade']}")
+                        st.info(f"💰 차량가격: {car_price:,.0f}원")
+
+            if car_price == 0:
+                st.warning("⚠️ 차량을 선택해주세요")
+        else:
+            # 직접 입력
+            car_price = st.number_input("차량 가격 (원)", min_value=0, value=110000000, step=1000000)
+
         option_price = st.number_input("옵션 가격 (원)", min_value=0, value=0, step=100000)
         dealer_discount = st.number_input("딜러 할인 (원)", min_value=0, value=0, step=100000)
 
