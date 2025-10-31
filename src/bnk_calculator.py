@@ -205,33 +205,39 @@ class BNKCalculator:
             'steps': []
         }
 
-        # 1. 기본가격 (옵션 포함, 딜러할인 차감 전)
+        # 1. 기본가격 (옵션 포함)
         base_price = car_price + option_price
 
         debug['steps'].append(f"=== 1. 차량 정보 ===")
         debug['steps'].append(f"차량 가격: {car_price:,.0f}원")
         debug['steps'].append(f"옵션 가격: {option_price:,.0f}원")
         debug['steps'].append(f"기본가격: {base_price:,.0f}원")
-        debug['steps'].append(f"딜러 할인: {dealer_discount:,.0f}원")
+        if dealer_discount > 0:
+            debug['steps'].append(f"딜러 할인: {dealer_discount:,.0f}원")
+            debug['steps'].append(f"할인 후 가격: {base_price - dealer_discount:,.0f}원")
 
-        # 2. 취득세/등록세 계산 (엑셀 B100, B101, B102)
+        # 2. 취득세/등록세 계산 (할인 후 가격 기준)
+        price_for_tax = base_price - dealer_discount
         acquisition_tax, registration_tax = self.calculate_acquisition_tax(
-            base_price, vehicle_type_eco
+            price_for_tax, vehicle_type_eco
         )
 
         debug['steps'].append(f"")
         debug['steps'].append(f"=== 2. 취득세/등록세 ===")
-        debug['steps'].append(f"공급가액: {base_price/1.1:,.0f}원 (VAT 제외)")
-        debug['steps'].append(f"등록세 ({registration_tax/(base_price/1.1)*100:.1f}%): {registration_tax:,.0f}원")
+        debug['steps'].append(f"공급가액: {price_for_tax/1.1:,.0f}원 (VAT 제외)")
+        debug['steps'].append(f"등록세 ({registration_tax/(price_for_tax/1.1)*100:.1f}%): {registration_tax:,.0f}원")
         debug['steps'].append(f"취득세 (2.0%): {acquisition_tax:,.0f}원")
 
-        # 3. 취득원가 (엑셀 B134)
+        # 3. 취득원가 = 차량가격 + 취득세 + 등록세 - 할인가
         # 공채는 생략 (간소화)
-        acquisition_cost = base_price + registration_tax + acquisition_tax
+        acquisition_cost = base_price + registration_tax + acquisition_tax - dealer_discount
 
         debug['steps'].append(f"")
         debug['steps'].append(f"=== 3. 취득원가 ===")
-        debug['steps'].append(f"{base_price:,.0f} + {registration_tax:,.0f} + {acquisition_tax:,.0f} = {acquisition_cost:,.0f}원")
+        if dealer_discount > 0:
+            debug['steps'].append(f"{base_price:,.0f} + {registration_tax:,.0f} + {acquisition_tax:,.0f} - {dealer_discount:,.0f} = {acquisition_cost:,.0f}원")
+        else:
+            debug['steps'].append(f"{base_price:,.0f} + {registration_tax:,.0f} + {acquisition_tax:,.0f} = {acquisition_cost:,.0f}원")
 
         # 4. 잔존가치 기준금액 (엑셀 B62)
         # 국산: 취득원가, 수입: 기본가격
@@ -313,22 +319,18 @@ class BNKCalculator:
             debug['steps'].append(f"선수금: {advance_amount:,.0f}원 ({deposit_rate}%)")
             debug['steps'].append(f"월납입 감소: {deposit_discount:,.0f}원")
 
-        # 10. 딜러할인 효과 (감가상각액 감소)
-        if dealer_discount > 0:
-            dealer_discount_monthly = dealer_discount / period
-            debug['steps'].append(f"")
-            debug['steps'].append(f"=== 10. 딜러할인 효과 ===")
-            debug['steps'].append(f"딜러할인: {dealer_discount:,.0f}원")
-            debug['steps'].append(f"월납입 감소: {dealer_discount_monthly:,.0f}원")
-        else:
-            dealer_discount_monthly = 0
-
-        # 11. 최종 월대여료
-        monthly_payment = base_monthly - deposit_discount - dealer_discount_monthly
+        # 10. 최종 월대여료 (딜러할인은 이미 취득원가에 반영됨)
+        monthly_payment = base_monthly - deposit_discount
 
         debug['steps'].append(f"")
-        debug['steps'].append(f"=== 11. 최종 월대여료 ===")
-        debug['steps'].append(f"{base_monthly:,.0f} - {deposit_discount:,.0f} - {dealer_discount_monthly:,.0f} = {monthly_payment:,.0f}원")
+        debug['steps'].append(f"=== 10. 최종 월대여료 ===")
+        if deposit_discount > 0:
+            debug['steps'].append(f"{base_monthly:,.0f} - {deposit_discount:,.0f} = {monthly_payment:,.0f}원")
+        else:
+            debug['steps'].append(f"{monthly_payment:,.0f}원")
+
+        if dealer_discount > 0:
+            debug['steps'].append(f"(딜러할인 {dealer_discount:,.0f}원은 이미 취득원가에 반영되어 감가상각액이 감소함)")
 
         debug['acquisition_cost'] = acquisition_cost
         debug['residual_value'] = residual_value
