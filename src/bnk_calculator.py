@@ -240,17 +240,20 @@ class BNKCalculator:
             debug['steps'].append(f"{base_price:,.0f} + {registration_tax:,.0f} + {acquisition_tax:,.0f} = {acquisition_cost:,.0f}원")
 
         # 4. 잔존가치 기준금액 (엑셀 B62)
-        # 국산: 취득원가, 수입: 기본가격
+        # 국산: 취득원가, 수입: 기본가격 - 딜러할인
         if is_domestic:
             rv_base_amount = acquisition_cost
             debug['steps'].append(f"")
             debug['steps'].append(f"=== 4. 잔존가치 기준금액 (국산) ===")
             debug['steps'].append(f"취득원가 기준: {rv_base_amount:,.0f}원")
         else:
-            rv_base_amount = base_price
+            rv_base_amount = base_price - dealer_discount
             debug['steps'].append(f"")
             debug['steps'].append(f"=== 4. 잔존가치 기준금액 (수입) ===")
-            debug['steps'].append(f"기본가격 기준: {rv_base_amount:,.0f}원")
+            if dealer_discount > 0:
+                debug['steps'].append(f"기본가격 - 딜러할인: {base_price:,.0f} - {dealer_discount:,.0f} = {rv_base_amount:,.0f}원")
+            else:
+                debug['steps'].append(f"기본가격 기준: {rv_base_amount:,.0f}원")
 
         # 5. 잔가율 조회 및 잔가액 계산 (엑셀 B56, B68, B70)
         rv_rate = self.get_residual_rate(rv_company, period, grade, mileage)
