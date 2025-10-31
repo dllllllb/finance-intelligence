@@ -669,18 +669,27 @@ def render_bnk_page():
         product_type = st.radio("상품 선택", ['리스', '렌트'])
         period = st.selectbox("계약 기간", [12, 24, 36, 42, 44, 48, 60], index=2)
 
-        # 차량 유형
-        vehicle_type = st.selectbox("차량 유형", ['웨스트_통합', '웨스트_수입', '큐브_수입', '무카_국산'])
+        # 차종 구분
+        vehicle_type_eco = st.selectbox("차종", ['일반', 'HEV', '전기'], index=0)
+        is_domestic = st.radio("국산/수입", ['국산', '수입']) == '국산'
 
-        # 등급
-        if vehicle_type in ['큐브_수입', '무카_국산']:
-            grades = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q']
-        else:
+        # 잔가사 선택
+        rv_company = st.selectbox(
+            "잔가사",
+            ['웨스트_통합', '웨스트_수입', '큐브_수입', '무카_국산', '태양_수입', '조이_수입', '코렉트', 'ADB']
+        )
+
+        # 등급 (잔가사별로 다름)
+        if rv_company in ['웨스트_통합', '웨스트_수입']:
             grades = ['S', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
-        grade = st.selectbox("차량 등급", grades)
+        elif rv_company == '무카_국산':
+            grades = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P']
+        else:  # 큐브, 태양, 조이, 코렉트, ADB
+            grades = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q']
+        grade = st.selectbox("차량 등급 (RV 등급)", grades)
 
         # 주행거리
-        mileage = st.select_slider("주행거리", ['1만', '1.5만', '2만', '3만'], value='2만')
+        mileage = st.select_slider("주행거리 (년간)", ['1만', '1.5만', '2만', '3만'], value='2만')
 
         # 보증금/선수금
         st.markdown("#### 보증금/선수금")
@@ -694,13 +703,15 @@ def render_bnk_page():
         if st.button("💰 견적 계산", use_container_width=True, type="primary"):
             if product_type == '리스':
                 monthly, debug = bnk.calculate_lease(
-                    car_price, option_price, period, vehicle_type, grade,
-                    mileage, deposit_type, deposit_rate, dealer_discount
+                    car_price, option_price, period, rv_company, grade,
+                    mileage, deposit_type, deposit_rate, dealer_discount,
+                    vehicle_type_eco, is_domestic
                 )
             else:
                 monthly, debug = bnk.calculate_rental(
-                    car_price, option_price, period, vehicle_type, grade,
-                    mileage, deposit_type, deposit_rate, dealer_discount
+                    car_price, option_price, period, rv_company, grade,
+                    mileage, deposit_type, deposit_rate, dealer_discount,
+                    vehicle_type_eco, is_domestic
                 )
 
             st.session_state.bnk_result = (monthly, debug)
